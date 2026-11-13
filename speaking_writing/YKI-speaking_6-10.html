@@ -1,0 +1,1744 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YKI-testi, suomi – keskitaso (B): Puhuminen – Harjoitusmateriaalit</title>
+  <style>
+    :root {
+      --bg-color: #f8fafc;
+      --card-bg: #ffffff;
+      --text-main: #1e293b;
+      --text-muted: #475569;
+      --primary: #0f4c81;
+      --primary-light: #e0f2fe;
+      --accent: #0284c7;
+      --border: #e2e8f0;
+      --answer-bg: #f1f5f9;
+      --answer-border: #0284c7;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+      color: var(--text-main);
+      background-color: var(--bg-color);
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 4rem;
+    }
+
+    header.main-header {
+      background-color: var(--primary);
+      color: #ffffff;
+      padding: 2.5rem 2rem;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+
+    header.main-header h1 {
+      margin: 0 0 0.5rem 0;
+      font-size: 1.9rem;
+      line-height: 1.25;
+    }
+
+    header.main-header p {
+      margin: 0;
+      opacity: 0.9;
+      font-size: 1.05rem;
+    }
+
+    nav.toc {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.5rem 2rem;
+      margin-bottom: 2.5rem;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    }
+
+    nav.toc h2 {
+      margin-top: 0;
+      font-size: 1.35rem;
+      color: var(--primary);
+      border-bottom: 2px solid var(--primary-light);
+      padding-bottom: 0.5rem;
+    }
+
+    nav.toc > ul {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 0;
+    }
+
+    nav.toc > ul > li {
+      margin-bottom: 1rem;
+    }
+
+    nav.toc > ul > li > a {
+      font-weight: 700;
+      font-size: 1.08rem;
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    nav.toc > ul > li > a:hover {
+      text-decoration: underline;
+    }
+
+    nav.toc ul ul {
+      list-style: disc;
+      padding-left: 1.5rem;
+      margin-top: 0.35rem;
+    }
+
+    nav.toc ul ul li {
+      margin-bottom: 0.25rem;
+    }
+
+    nav.toc ul ul a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    nav.toc ul ul a:hover {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
+    section.doc-section {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 2rem 2.25rem;
+      margin-bottom: 3rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+    }
+
+    .doc-badge {
+      display: inline-block;
+      background-color: var(--primary-light);
+      color: var(--primary);
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.25rem 0.65rem;
+      border-radius: 6px;
+      margin-bottom: 0.75rem;
+    }
+
+    section.doc-section h2 {
+      color: var(--primary);
+      font-size: 1.65rem;
+      margin: 0 0 0.25rem 0;
+      line-height: 1.3;
+    }
+
+    .doc-subtitle {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--accent);
+      margin: 0 0 1rem 0;
+    }
+
+    .intro-note {
+      background-color: #f8fafc;
+      border-left: 4px solid #94a3b8;
+      padding: 0.85rem 1.1rem;
+      color: var(--text-muted);
+      margin-bottom: 1.75rem;
+      border-radius: 0 6px 6px 0;
+    }
+
+    h3 {
+      color: var(--primary);
+      font-size: 1.3rem;
+      margin-top: 2.25rem;
+      margin-bottom: 0.75rem;
+      padding-bottom: 0.35rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h4 {
+      color: var(--text-main);
+      font-size: 1.1rem;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      margin: 0 0 0.9rem 0;
+    }
+
+    ul, ol {
+      margin: 0 0 1rem 0;
+      padding-left: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.35rem;
+    }
+
+    .meta-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      background-color: var(--primary-light);
+      color: var(--primary);
+      padding: 0.6rem 1rem;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+
+    .model-answer {
+      background-color: var(--answer-bg);
+      border-left: 4px solid var(--answer-border);
+      padding: 1rem 1.25rem;
+      margin: 0.75rem 0 1.25rem 0;
+      border-radius: 0 8px 8px 0;
+    }
+
+    .model-answer strong.label {
+      color: var(--primary);
+      display: inline-block;
+      margin-bottom: 0.25rem;
+    }
+
+    .dialogue-turn {
+      margin-bottom: 1rem;
+    }
+
+    .speaker-other {
+      font-weight: 600;
+      color: #334155;
+    }
+
+    .speaker-you {
+      font-weight: 700;
+      color: var(--primary);
+      margin-top: 0.75rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0 1.75rem 0;
+      font-size: 0.95rem;
+    }
+
+    th, td {
+      border: 1px solid var(--border);
+      padding: 0.65rem 0.85rem;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background-color: var(--primary);
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+    tr:nth-child(even) td {
+      background-color: #f8fafc;
+    }
+
+    .tip-box {
+      background-color: #fefce8;
+      border: 1px solid #fde047;
+      border-left: 4px solid #eab308;
+      padding: 1rem 1.25rem;
+      border-radius: 0 8px 8px 0;
+      margin-top: 1.5rem;
+    }
+
+    .back-to-top {
+      display: inline-block;
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .back-to-top:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        padding: 1rem 0.75rem 2.5rem;
+      }
+      section.doc-section {
+        padding: 1.25rem 1rem;
+      }
+      header.main-header {
+        padding: 1.5rem 1.25rem;
+      }
+      th, td {
+        padding: 0.5rem;
+        font-size: 0.88rem;
+      }
+    }
+  </style>
+</head>
+<body id="top">
+  <div class="container">
+    <header class="main-header">
+      <h1>YKI-testi, suomi – keskitaso (B): Puhuminen</h1>
+      <p>Kootut harjoituskokeet, mallivastaukset ja hyödylliset puhekielen fraasit</p>
+    </header>
+
+    <nav class="toc" aria-label="Sisällysluettelo">
+      <h2>Sisällysluettelo (Table of Contents)</h2>
+      <ul>
+        <li>
+          <a href="#doc-1">1. YKI-speaking-6.docx – Harjoituskoe 2 mallivastauksineen</a>
+          <ul>
+            <li><a href="#doc1-sec1">1. Kertominen</a></li>
+            <li><a href="#doc1-sec2">2. Keskustelu: hotellihuoneen varaaminen</a></li>
+            <li><a href="#doc1-sec3">3. Keskustelu: ilmoitus kadonneesta takista</a></li>
+            <li><a href="#doc1-sec4">4. Tilanteet (Tilanteet 1–5)</a></li>
+            <li><a href="#doc1-sec5">5. Mielipide (A: Etätyö ja toimistotyö / B: Julkinen liikenne ja yksityisautoilu)</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#doc-2">2. YKI-speaking-7.docx – Harjoituskoe tammikuulle 2027</a>
+          <ul>
+            <li><a href="#doc2-sec1">1. Kertominen</a></li>
+            <li><a href="#doc2-sec2">2. Keskustelu: kurssille ilmoittautuminen</a></li>
+            <li><a href="#doc2-sec3">3. Keskustelu: käytetyn huonekalun ostaminen</a></li>
+            <li><a href="#doc2-sec4">4. Tilanteet (Tilanteet 1–5)</a></li>
+            <li><a href="#doc2-sec5">5. Mielipide (A: Vapaa-aika ja kiire / B: Roskien lajittelu ja kierrättäminen)</a></li>
+            <li><a href="#doc2-sec6">Aikataulut yhteenvetona</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#doc-3">3. YKI-speaking-8.docx – Harjoituskoe joulukuulle 2026</a>
+          <ul>
+            <li><a href="#doc3-sec1">1. Kertominen</a></li>
+            <li><a href="#doc3-sec2">2. Keskustelu: taloyhtiön pesutupa</a></li>
+            <li><a href="#doc3-sec3">3. Keskustelu: polkupyörän huolto</a></li>
+            <li><a href="#doc3-sec4">4. Tilanteet (Tilanteet 1–5)</a></li>
+            <li><a href="#doc3-sec5">5. Mielipide (A: Matkailu kotimaassa ja ulkomailla / B: Puhelimen käyttö arjessa)</a></li>
+            <li><a href="#doc3-sec6">Aikataulut yhteenvetona</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#doc-4">4. YKI-speaking-9.docx – Harjoituskoe tammikuulle 2026</a>
+          <ul>
+            <li><a href="#doc4-sec1">1. Kertominen</a></li>
+            <li><a href="#doc4-sec2">2. Keskustelu: uuden asunnon etsiminen</a></li>
+            <li><a href="#doc4-sec3">3. Keskustelu: valokuvauskurssista kysyminen</a></li>
+            <li><a href="#doc4-sec4">4. Tilanteet (Tilanteet 1–5)</a></li>
+            <li><a href="#doc4-sec5">5. Mielipide (A: Verkko-ostaminen ja tavalliset kaupat / B: Lemmikkieläimet ja vastuu)</a></li>
+            <li><a href="#doc4-sec6">Aikataulut yhteenvetona</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#doc-5">5. YKI-speaking-10.docx – 130 useful Finnish speaking phrases for YKI B1/B2 practice</a>
+          <ul>
+            <li><a href="#doc5-sec1">1. Starting and keeping your turn (1–20)</a></li>
+            <li><a href="#doc5-sec2">2. Giving opinions (21–40)</a></li>
+            <li><a href="#doc5-sec3">3. Giving reasons and examples (41–55)</a></li>
+            <li><a href="#doc5-sec4">4. Comparing, balancing and adding nuance (56–70)</a></li>
+            <li><a href="#doc5-sec5">5. Telling a story or describing events (71–85)</a></li>
+            <li><a href="#doc5-sec6">6. Responding and managing a conversation (86–100)</a></li>
+            <li><a href="#doc5-sec7">7. Useful phrases for everyday situations (101–115)</a></li>
+            <li><a href="#doc5-sec8">8. Common sayings and idiomatic expressions (116–130)</a></li>
+            <li><a href="#doc5-sec9">Quick practice tip</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- =====================================================================
+         DOCUMENT 1: YKI-speaking-6.docx
+         ===================================================================== -->
+    <section id="doc-1" class="doc-section">
+      <span class="doc-badge">Tiedosto 1: YKI-speaking-6.docx</span>
+      <h2>YKI-testi, suomi – keskitaso (B): puhuminen</h2>
+      <p class="doc-subtitle">Harjoituskoe 2 mallivastauksineen</p>
+      <p class="intro-note">Tämä on uusi, epävirallinen harjoituskoe. Se noudattaa antamiasi tehtävätyyppejä ja vastausaikoja, mutta ei ole virallinen YKI-koe. Mallivastaukset ovat esimerkkejä — kokeessa voit vastata omin sanoin.</p>
+
+      <h3 id="doc1-sec1">1. Kertominen</h3>
+      <div class="meta-bar">
+        <span>Valmistautumisaika: 1 minuutti</span>
+        <span>Vastausaika: 1 minuutti 30 sekuntia</span>
+      </div>
+      <p><strong>Äänite:</strong> “Aloita puhuminen nyt.”</p>
+      <p><strong>Tehtävä:</strong> Kerro paikasta, jossa viihdyt. Kerro esimerkiksi:</p>
+      <ul>
+        <li>Missä paikka sijaitsee?</li>
+        <li>Millainen paikka se on?</li>
+        <li>Milloin käyt siellä?</li>
+        <li>Mitä teet siellä?</li>
+        <li>Miksi viihdyt siellä?</li>
+        <li>Kenen kanssa käyt siellä?</li>
+      </ul>
+      <div class="model-answer">
+        <strong class="label">Mallivastaus:</strong>
+        <p>Paikka, jossa viihdyn erityisen hyvin, on järvenranta lähellä kotiani. Sinne pääsee kävellen noin vartissa. Ranta ei ole kovin suuri, mutta siellä on pieni laituri, penkkejä ja paljon puita.</p>
+        <p>Käyn siellä etenkin kesällä ja alkusyksystä. Jos sää on lämmin, saatan mennä uimaan tai istua lukemassa kirjaa. Joskus käyn siellä kävelyllä työpäivän jälkeen. Talvella en käy yhtä usein, mutta tykkään silti katsella järveä, jos se on jäätynyt.</p>
+        <p>Viihdyn siellä, koska paikka on rauhallinen. Kaupungissa on usein paljon ääniä ja kiirettä, mutta rannalla voin olla hetken hiljaa ja ajatella omia asioitani. Kun olen stressaantunut, pieni kävely järven rannalla auttaa minua rentoutumaan.</p>
+        <p>Käyn siellä yleensä yksin, mutta joskus menen ystäväni kanssa. Meillä on tapana ottaa mukaan kahvia ja jutella päivän tapahtumista. Paikka on minulle tärkeä, koska siellä tunnen oloni levolliseksi. Se ei ole mikään erikoinen matkakohde, mutta se on lähellä ja sinne on helppo mennä.</p>
+      </div>
+
+      <h3 id="doc1-sec2">2. Keskustelu: hotellihuoneen varaaminen</h3>
+      <p><strong>Tehtävä:</strong> Olet suunnittelemassa viikonloppumatkaa ja soitat hotelliin. Haluat varata huoneen kahdelle aikuiselle. Vastaa hotellin työntekijän puheenvuoroihin mahdollisimman luontevasti.</p>
+      <h4>Puhelu</h4>
+
+      <div class="dialogue-turn">
+        <p class="speaker-other">Mies: Hyvää päivää, Hotelli Auringonlahti. Miten voin auttaa?</p>
+        <p class="speaker-you">Sinä (20 sek): Esittele itsesi ja kerro asiasi.</p>
+        <div class="model-answer">
+          <strong class="label">Mallivastaus:</strong> Hyvää päivää. Nimeni on Mika Korhonen. Haluaisin varata hotellihuoneen viikonlopuksi. Olen tulossa puolisoni kanssa kaupunkiin, ja haluaisimme majoittua yhden yön.
+        </div>
+      </div>
+
+      <div class="dialogue-turn">
+        <p class="speaker-other">Mies: Milloin haluaisitte tulla, ja kuinka monta henkilöä huoneeseen tulee?</p>
+        <p class="speaker-you">Sinä (20 sek): Kerro ajankohta ja henkilömäärä.</p>
+        <div class="model-answer">
+          <strong class="label">Mallivastaus:</strong> Haluaisimme tulla perjantaina 14. kesäkuuta ja lähteä lauantaina aamupäivällä. Huoneeseen tulee kaksi aikuista. Jos mahdollista, haluaisimme huoneen, jossa on parivuode.
+        </div>
+      </div>
+
+      <div class="dialogue-turn">
+        <p class="speaker-other">Mies: Meillä on silloin vapaita huoneita. Haluatteko tavallisen huoneen vai huoneen, josta on näköala järvelle?</p>
+        <p class="speaker-you">Sinä (10 sek): Vastaa.</p>
+        <div class="model-answer">
+          <strong class="label">Mallivastaus:</strong> Järvinäköala kuulostaa mukavalta. Voisitteko kertoa, onko sellainen huone vielä vapaana?
+        </div>
+      </div>
+
+      <div class="dialogue-turn">
+        <p class="speaker-other">Mies: Kyllä, yksi järvinäköalahuone on vapaana. Aamiainen ei kuitenkaan sisälly tavalliseen huonehintaan.</p>
+        <p class="speaker-you">Sinä (15 sek): Vastaa ja kerro, haluatko aamiaisen.</p>
+        <div class="model-answer">
+          <strong class="label">Mallivastaus:</strong> Haluaisimme ottaa aamiaisen mukaan varaukseen. Onko aamiainen tarjolla aikaisin aamulla? Meidän täytyy lähteä lauantaina melko varhain.
+        </div>
+      </div>
+
+      <div class="dialogue-turn">
+        <p class="speaker-other">Mies: Aamiainen alkaa kello seitsemältä. Voimme myös järjestää mukaan otettavan aamiaisen, jos lähdette aikaisin.</p>
+        <p class="speaker-you">Sinä (20 sek): Kysy jotakin tarkemmin palveluista tai varauksesta.</p>
+        <div class="model-answer">
+          <strong class="label">Mallivastaus:</strong> Se olisi hyvä tietää. Mitä mukaan otettava aamiainen sisältää, ja pitääkö se tilata etukäteen? Haluaisin myös kysyä, voiko varauksen perua, jos suunnitelmamme muuttuvat.
+        </div>
+      </div>
+
+      <div class="dialogue-turn">
+        <p class="speaker-other">Mies: Aamiaispaketti pitää tilata edellisenä iltana. Varauksen voi perua maksutta kaksi päivää ennen saapumista.</p>
+        <p class="speaker-you">Sinä (10 sek): Kysy hintaa.</p>
+        <div class="model-answer">
+          <strong class="label">Mallivastaus:</strong> Kiitos tiedosta. Paljonko huone maksaa yhdeltä yöltä, ja mitä aamiainen maksaa kahdelta henkilöltä?
+        </div>
+      </div>
+
+      <div class="dialogue-turn">
+        <p class="speaker-other">Mies: Huone maksaa 145 euroa yöltä. Aamiainen maksaa 15 euroa henkilöltä.</p>
+        <p class="speaker-you">Sinä (10 sek): Lopeta puhelu.</p>
+        <div class="model-answer">
+          <strong class="label">Mallivastaus:</strong> Selvä, kiitos paljon. Varaan huoneen ja aamiaisen. Voisitteko lähettää varausvahvistuksen sähköpostilla? Kiitos avusta. Kuulemiin!
+        </div>
+        <p class="speaker-other">Mies: Kiitos soitosta. Lähetämme vahvistuksen. Kuulemiin!</p>
+      </div>
+
+      <h3 id="doc1-sec3">3. Keskustelu: ilmoitus kadonneesta takista</h3>
+      <p><strong>Tehtävä:</strong> Olet jättänyt ilmoituksen paikalliseen verkkopalveluun, koska olet kadottanut takin. Henkilö, joka on ehkä löytänyt sen, soittaa sinulle. Vastaa kysymyksiin ja sovi, miten saat takin takaisin.</p>
+      <p><strong>Huomio:</strong> Sinä aloitat puhumisen heti äänimerkin jälkeen.</p>
+      <h4>Puhelu</h4>
+
+      <div class="dialogue-turn">
+        <p class="speaker-you">Sinä (10 sek): Vastaa puhelimeen.</p>
+        <div class="model-answer">
+          <strong class="label">Mallivastaus:</strong> Haloo, tässä on Sanna.
+        </div>
+      </div>
+
+      <div class="dialogue-turn">
+        <p class="speaker-other">Nainen: Hei, näin ilmoituksesi kadonneesta takista. Löysin viikonloppuna takin bussipysäkiltä. Millainen takki sinulta katosi?</p>
+        <p class="speaker-you">Sinä (20 sek): Vastaa ja kuvaile takkia.</p>
+        <div class="model-answer">
+          <strong class="label">Mallivastaus:</strong> Kiitos soitosta. Takki on tummanvihreä, pitkä villakangastakki. Siinä on suuret napit ja kaksi taskua edessä. Sisällä olevassa taskussa on pieni avainnippu.
+        </div>
+      </div>
+
+      <div class="dialogue-turn">
+        <p class="speaker-other">Nainen: Löytämässäni takissa on kyllä avainnippu. Milloin ja missä huomasit kadottaneesi sen?</p>
+        <p class="speaker-you">Sinä (20 sek): Vastaa.</p>
+        <div class="model-answer">
+          <strong class="label">Mallivastaus:</strong> Huomasin takin puuttuvan lauantai-iltana. Olin ollut keskustassa ystäväni kanssa, joten arvelen jättäneeni sen bussipysäkille torin lähellä. Olin matkalla numero kahdeksan bussille.
+        </div>
+      </div>
+
+      <div class="dialogue-turn">
+        <p class="speaker-other">Nainen: Takki kuulostaa samalta. Haluatko tulla hakemaan sen tänään? Minulla on se kotona.</p>
+        <p class="speaker-you">Sinä (20 sek): Vastaa ja sovi yleisesti tapaamisesta.</p>
+        <div class="model-answer">
+          <strong class="label">Mallivastaus:</strong> Kyllä, tulisin mielelläni hakemaan sen. Tänään sopii hyvin, mutta pääsen lähtemään vasta töiden jälkeen, noin kello kuuden aikaan. Asutko lähellä keskustaa?
+        </div>
+      </div>
+
+      <div class="dialogue-turn">
+        <p class="speaker-other">Nainen: Asun noin kymmenen minuutin kävelymatkan päässä torilta. Mihin aikaan tarkalleen pääsisit?</p>
+        <p class="speaker-you">Sinä (20 sek): Ehdota aikaa ja kysy tarkempia saapumisohjeita.</p>
+        <div class="model-answer">
+          <strong class="label">Mallivastaus:</strong> Voisin tulla noin kello kuudelta tai varttia yli kuusi. Kumpi sopii sinulle paremmin? Voisitko lähettää minulle osoitteesi ja kertoa, minkä oven kautta tulen sisään?
+        </div>
+      </div>
+
+      <div class="dialogue-turn">
+        <p class="speaker-other">Nainen: Kello kuusi sopii. Lähetän sinulle osoitteen viestillä. Soita ovikelloa, kun olet perillä.</p>
+        <p class="speaker-you">Sinä (25 sek): Vahvista tapaaminen ja kiitä.</p>
+        <div class="model-answer">
+          <strong class="label">Mallivastaus:</strong> Selvä, nähdään siis tänään kello kuusi. Odotan osoitettasi. Kiitos todella paljon siitä, että soitit ja otit takin talteen. Siinä on myös avaimeni, joten olen erityisen iloinen, että löysit sen. Soitan ovikelloa, kun pääsen perille.
+        </div>
+      </div>
+
+      <div class="dialogue-turn">
+        <p class="speaker-other">Nainen: Hyvä, nähdään illalla.</p>
+        <p class="speaker-you">Sinä (10 sek): Vastaa ja lopeta puhelu.</p>
+        <div class="model-answer">
+          <strong class="label">Mallivastaus:</strong> Kiitos vielä kerran. Nähdään illalla, hei hei!
+        </div>
+      </div>
+
+      <h3 id="doc1-sec4">4. Tilanteet</h3>
+      <p>Jokaisessa tilanteessa kuulet tilanteen numeron ja saat 20 sekuntia aikaa tutustua tehtävään. Kun kuulet “Puhu nyt”, vastaa suomeksi.</p>
+
+      <h4>Tilanne 1: Uusi harrastus</h4>
+      <div class="meta-bar"><span>Vastausaika: 20 sekuntia</span></div>
+      <p>Ystäväsi kysyy, oletko aloittanut viime aikoina uuden harrastuksen. Kerro harrastuksestasi ja siitä, miksi pidät siitä.</p>
+      <div class="model-answer">
+        <strong class="label">Mallivastaus:</strong> Olen aloittanut viime aikoina valokuvauksen. Käyn viikonloppuisin kävelyllä ja otan kuvia luonnosta ja vanhoista rakennuksista. Pidän siitä, koska ulkoilen enemmän ja opin samalla käyttämään kameraa paremmin. En ole vielä kovin taitava, mutta harrastus on mukavaa ajanvietettä.
+      </div>
+
+      <h4>Tilanne 2: Ajan varaaminen hammaslääkäriin</h4>
+      <div class="meta-bar"><span>Vastausaika: 30 sekuntia</span></div>
+      <p>Soitat hammaslääkäriasemalle ja haluat varata ajan tarkastukseen. Kerro, milloin sinulle sopisi, ja kysy, kuinka kauan käynti kestää.</p>
+      <div class="model-answer">
+        <strong class="label">Mallivastaus:</strong> Hyvää päivää. Haluaisin varata ajan hammastarkastukseen. Minulle sopisi parhaiten ensi viikon tiistai tai keskiviikko iltapäivällä, mutta voin järjestää työpäivääni, jos vapaa aika on aamulla. Onko teillä silloin vapaita aikoja? Haluaisin myös tietää, kuinka kauan tarkastuskäynti yleensä kestää.
+      </div>
+
+      <h4>Tilanne 3: Kiittäminen kutsusta</h4>
+      <div class="meta-bar"><span>Vastausaika: 30 sekuntia</span></div>
+      <p>Työtoverisi kutsui sinut kotiinsa illalliselle. Kiitä kutsusta, kerro pääsetkö tulemaan ja kysy, haluaisiko hän sinun tuovan jotain.</p>
+      <div class="model-answer">
+        <strong class="label">Mallivastaus:</strong> Kiitos paljon kutsusta, tulen mielelläni illalliselle. Lauantai sopii minulle hyvin. Mihin aikaan minun kannattaa tulla? Voin tuoda jotakin mukanani, esimerkiksi jälkiruoan tai juotavaa. Kerro vain, jos tarvitset apua ruoan valmistelussa.
+      </div>
+
+      <h4>Tilanne 4: Bussilipun ostaminen</h4>
+      <div class="meta-bar"><span>Vastausaika: 30 sekuntia</span></div>
+      <p>Olet linja-autoasemalla ja haluat ostaa lipun seuraavan päivän matkaa varten. Kerro määränpää, matkustuspäivä ja se, milloin haluaisit lähteä. Kysy myös lipun hinnasta.</p>
+      <div class="model-answer">
+        <strong class="label">Mallivastaus:</strong> Hei. Haluaisin ostaa bussilipun Kuopioon huomiseksi, lauantaille. Haluaisin lähteä aamupäivällä, mieluiten kello yhdeksän ja yhdentoista välillä. Onko silloin vapaita paikkoja? Kuinka kauan matka kestää, ja paljonko aikuisten lippu maksaa? Tarvitsen vain menolipun.
+      </div>
+
+      <h4>Tilanne 5: Melu naapuriasunnossa</h4>
+      <div class="meta-bar"><span>Vastausaika: 30 sekuntia</span></div>
+      <p>Soitat isännöitsijälle, koska naapuriasunnosta on kuulunut häiritsevää melua iltaisin. Kerro, mistä on kyse, ja kysy, mitä asialle voisi tehdä.</p>
+      <div class="model-answer">
+        <strong class="label">Mallivastaus:</strong> Hei, soitan taloyhtiön meluhaitasta. Viimeisen kahden viikon aikana viereisestä asunnosta on kuulunut kovaa musiikkia ja juhlimista useana iltana. Melu jatkuu joskus puolenyön jälkeen, ja minun on vaikea nukkua, koska herään aikaisin töihin. Voisitteko neuvoa, miten asiasta pitäisi ilmoittaa tai mitä voitte tehdä tilanteelle?
+      </div>
+
+      <h3 id="doc1-sec5">5. Mielipide</h3>
+      <p>Valitse toinen aiheista. Sinulla on 2 minuuttia aikaa puhua. Perustele mielipiteesi ja yritä puhua koko vastausaika.</p>
+
+      <h4>A) Etätyö ja toimistotyö</h4>
+      <p>Kerro esimerkiksi:</p>
+      <ul>
+        <li>Mitä hyviä ja huonoja puolia etätyössä on?</li>
+        <li>Pidätkö itse enemmän etätyöstä vai työpaikalla työskentelystä?</li>
+        <li>Miten etätyö vaikuttaa työntekijöiden hyvinvointiin?</li>
+        <li>Pitäisikö kaikkien työntekijöiden saada tehdä etätyötä?</li>
+        <li>Miten työnantaja voi auttaa työntekijöitä tekemään työtään hyvin?</li>
+      </ul>
+      <div class="model-answer">
+        <strong class="label">Mallivastaus:</strong>
+        <p>Minun mielestäni etätyössä on sekä hyviä että huonoja puolia. Yksi suuri etu on se, että työmatkoihin ei kulu aikaa. Jos ihminen työskentelee kotoa, hän voi käyttää tämän ajan esimerkiksi lepäämiseen tai perheen kanssa olemiseen. Kotona työskenteleminen voi myös olla rauhallisempaa, jos työpaikalla on paljon ääntä.</p>
+        <p>Toisaalta etätyö voi tuntua yksinäiseltä. Työkavereita ei tapaa samalla tavalla, eikä pieniä kysymyksiä voi aina kysyä helposti. Lisäksi työn ja vapaa-ajan raja voi hämärtyä. Jotkut jatkavat työskentelyä vielä illalla, koska työvälineet ovat koko ajan lähellä.</p>
+        <p>Pidän itse eniten siitä, että voin tehdä osan työstä kotona ja osan työpaikalla. Kotona pystyn keskittymään tehtäviin, jotka vaativat rauhaa. Työpaikalla taas on helpompi keskustella muiden kanssa ja saada apua nopeasti. Siksi työviikossa voisi olla esimerkiksi kaksi etätyöpäivää ja kolme toimistopäivää.</p>
+        <p>En usko, että kaikkien työntekijöiden pitäisi olla samassa tilanteessa. Joissakin ammateissa etätyö ei ole mahdollista, ja toisissa työtehtävissä se sopii hyvin. Työnantajan olisi hyvä sopia työntekijän kanssa selkeistä tavoitteista ja työajoista. Myös yhteisiä tapaamisia tarvitaan, jotta työntekijät pysyvät mukana työyhteisössä.</p>
+        <p>Kaiken kaikkiaan etätyö on hyödyllinen vaihtoehto, jos sitä käytetään sopivasti. Paras ratkaisu riippuu työstä ja ihmisestä.</p>
+      </div>
+
+      <h4>B) Julkinen liikenne ja yksityisautoilu</h4>
+      <p>Kerro esimerkiksi:</p>
+      <ul>
+        <li>Millä kulkuvälineillä ihmiset yleensä liikkuvat asuinalueellasi?</li>
+        <li>Mitä etuja ja haittoja julkisessa liikenteessä on?</li>
+        <li>Miksi ihmiset käyttävät autoa?</li>
+        <li>Miten julkista liikennettä voisi kehittää?</li>
+        <li>Pitäisikö ihmisiä kannustaa käyttämään vähemmän autoa? Miksi?</li>
+      </ul>
+      <div class="model-answer">
+        <strong class="label">Mallivastaus:</strong>
+        <p>Asuinalueellani ihmiset liikkuvat bussilla, autolla ja polkupyörällä. Keskustassa moni kulkee myös kävellen. Julkinen liikenne on tärkeää erityisesti opiskelijoille, vanhuksille ja ihmisille, joilla ei ole autoa.</p>
+        <p>Bussilla matkustamisen hyvä puoli on se, ettei tarvitse etsiä parkkipaikkaa. Bussissa voi myös lukea tai kuunnella musiikkia matkan aikana. Julkinen liikenne voi vähentää ruuhkia ja päästöjä, jos tarpeeksi moni käyttää sitä. Huono puoli on se, että bussit eivät aina kulje sopivaan aikaan tai kaikkialle. Jos asuu kaukana keskustasta, matka voi kestää kauan.</p>
+        <p>Monet käyttävät autoa, koska se on joustava. Autolla voi lähteä silloin, kun haluaa, ja samalla voi kuljettaa tavaroita tai lapsia. Auto voi olla tarpeellinen myös työssä, jos työpaikka sijaitsee alueella, jonne ei pääse helposti bussilla.</p>
+        <p>Julkista liikennettä voisi kehittää lisäämällä vuoroja etenkin iltaisin ja viikonloppuisin. Lippujen pitäisi olla helposti ostettavia, ja aikataulujen pitäisi olla luotettavia. Myös eri kulkuvälineiden, esimerkiksi bussien ja junien, vaihtojen pitäisi toimia hyvin.</p>
+        <p>Minusta ihmisiä kannattaa kannustaa käyttämään autoa vähemmän, mutta vaihtoehtojen täytyy ensin olla käytännöllisiä. Jos bussi kulkee harvoin, auto voi olla monelle ainoa järkevä vaihtoehto. Kun julkinen liikenne toimii hyvin, useampi ihminen voi valita sen auton sijasta.</p>
+      </div>
+
+      <a href="#top" class="back-to-top">↑ Takaisin ylös (Sisällysluettelo)</a>
+    </section>
+
+    <!-- =====================================================================
+         DOCUMENT 2: YKI-speaking-7.docx
+         ===================================================================== -->
+    <section id="doc-2" class="doc-section">
+      <span class="doc-badge">Tiedosto 2: YKI-speaking-7.docx</span>
+      <h2>YKI-testi, suomi – keskitaso (B): puhuminen</h2>
+      <p class="doc-subtitle">Harjoituskoe tammikuulle 2027</p>
+      <p class="intro-note">Tämä on uusi, epävirallinen harjoituskoe, joka perustuu antamiisi tehtävätyyppeihin ja vastausaikoihin. Se ei ole tammikuun 2027 virallinen YKI-koe, eikä sen aiheita voi tietää etukäteen. Mallivastaukset ovat esimerkkejä — harjoitellessa voit vastata myös omin sanoin.</p>
+
+      <h3 id="doc2-sec1">1. Kertominen</h3>
+      <div class="meta-bar">
+        <span>Valmistautumisaika: 1 minuutti</span>
+        <span>Vastausaika: 1 minuutti 30 sekuntia</span>
+      </div>
+      <p><strong>Äänite:</strong> “Aloita puhuminen nyt.”</p>
+      <p><strong>Tehtävä:</strong> Kerro tapahtumasta, jota odotat innolla. Voit kertoa esimerkiksi:</p>
+      <ul>
+        <li>Mikä tapahtuma on?</li>
+        <li>Milloin se järjestetään?</li>
+        <li>Kenen kanssa osallistut?</li>
+        <li>Mitä aiot tehdä siellä?</li>
+        <li>Miksi odotat sitä?</li>
+        <li>Oletko osallistunut samanlaiseen tapahtumaan aiemmin?</li>
+      </ul>
+      <div class="model-answer">
+        <strong class="label">Mallivastaus:</strong>
+        <p>Odotan innolla ensi kesän matkaa, jonka suunnittelemme ystäväni kanssa. Aiomme matkustaa junalla Turkuun ja olla siellä muutaman päivän. Emme ole vielä päättäneet kaikkia yksityiskohtia, mutta haluaisimme käydä ainakin vanhassa kaupungissa ja meren rannalla.</p>
+        <p>Matkasta tekee erityisen mukavan se, että meillä ei ole kiirettä. Olemme molemmat tehneet paljon töitä, joten on mukavaa viettää aikaa yhdessä ja vaihtaa maisemaa. Tarkoitus on kävellä paljon, käydä kahviloissa ja ehkä osallistua opastetulle kierrokselle.</p>
+        <p>Olen käynyt Turussa kerran aikaisemmin, mutta siitä on jo monta vuotta. Silloin olin siellä vain yhden päivän, joten en ehtinyt nähdä kovin paljon. Tällä kertaa voimme tutustua kaupunkiin rauhallisemmin.</p>
+        <p>Matkan järjestäminen on myös hauskaa. Etsimme parhaillaan sopivaa hotellia ja katsomme, mitä nähtävyyksiä kaupungissa on. Yritämme pitää matkan kohtuuhintaisena, joten varaamme junaliput ajoissa. Odotan eniten sitä, että saamme viettää aikaa yhdessä ilman tavallisia arjen kiireitä.</p>
+      </div>
+
+      <h3 id="doc2-sec2">2. Keskustelu: kurssille ilmoittautuminen</h3>
+      <p><strong>Tehtävä:</strong> Haluat ilmoittautua kansalaisopiston iltakurssille. Soitat opiston toimistoon ja kysyt kurssista.</p>
+      <h4>Puhelu</h4>
+
+      <div class="dialogue-turn">
+        <p class="speaker-other">Nainen: Kansalaisopisto, hyvää päivää. Kuinka voin auttaa?</p>
+        <p class="speaker-you">Sinä (20 sek): Esittele itsesi ja kerro asiasi.</p>
+        <div class="model-answer">
+          <strong class="label">Mallivastaus:</strong> Hyvää päivää. Nimeni on Elias Niemi. Soitan, koska olen kiinnostunut teidän suomen kielen keskustelukurssistanne. Haluaisin kysyä, onko kurssille vielä mahdollista ilmoittautua.
+        </div>
+      </div>
+
+      <div class="dialogue-turn">
+        <p class="speaker-other">Nainen: Kurssi alkaa ensi kuussa. Oletko opiskellut suomea aiemmin, ja millä tasolla arvioit olevasi?</p>
+        <p class="speaker-you">Sinä (20 sek): Kerro opiskelustasi ja kielitaidostasi.</p>
+        <div class="model-answer">
+          <strong class="label">Mallivastaus:</strong> Olen opiskellut suomea noin kolme vuotta. Ymmärrän tavallisia keskusteluja melko hyvin, mutta haluaisin harjoitella puhumista ja oppia lisää uusia sanoja. Luulen, että keskitasoinen ryhmä voisi sopia minulle.
+        </div>
+      </div>
+
+      <div class="dialogue-turn">
+        <p class="speaker-other">Nainen: Kurssi kokoontuu tiistaisin kello kuudesta puoli kahdeksaan. Pääsetkö silloin osallistumaan?</p>
+        <p class="speaker-you">Sinä (10 sek): Vastaa.</p>
+        <div class="model-answer">
+          <strong class="label">Mallivastaus:</strong> Kyllä, tiistai-ilta sopii minulle hyvin. Pääsen yleensä töistä viiteen mennessä.
+        </div>
+      </div>
+
+      <div class="dialogue-turn">
+        <p class="speaker-other">Nainen: Kurssilla tehdään keskusteluharjoituksia ja lyhyitä esityksiä. Osa tehtävistä tehdään pareittain.</p>
+        <p class="speaker-you">Sinä (15 sek): Vastaa ja kerro, mitä toivot kurssilta.</p>
+        <div class="model-answer">
+          <strong class="label">Mallivastaus:</strong> Se kuulostaa hyvältä. Toivon erityisesti, että saisin enemmän rohkeutta puhua suomea erilaisissa tilanteissa. Olisi myös hyödyllistä saada palautetta ääntämisestäni ja kieliopista.
+        </div>
+      </div>
+
+      <div class="dialogue-turn">
+        <p class="speaker-other">Nainen: Kurssikirja ei sisälly kurssimaksuun. Haluatko tietää, mitä materiaaleja tarvitset?</p>
+        <p class="speaker-you">Sinä (20 sek): Kysy tarkemmin kurssimateriaaleista ja ilmoittautumisesta.</p>
+        <div class="model-answer">
+          <strong class="label">Mallivastaus:</strong> Kyllä, kiitos. Mikä kirja kurssilla on käytössä, ja pitääkö se ostaa ennen ensimmäistä tapaamista? Voiko ilmoittautumisen tehdä puhelimessa, vai pitääkö minun täyttää verkkolomake?
+        </div>
+      </div>
+
+      <div class="dialogue-turn">
+        <p class="speaker-other">Nainen: Kirjan nimi on Suomea yhdessä. Ilmoittautuminen onnistuu verkkosivujen kautta, ja saat vahvistuksen sähköpostiisi.</p>
+        <p class="speaker-you">Sinä (10 sek): Kysy kurssin hintaa.</p>
+        <div class="model-answer">
+          <strong class="label">Mallivastaus:</strong> Kiitos. Paljonko kurssi maksaa koko lukukaudelta?
+        </div>
+      </div>
+
+      <div class="dialogue-turn">
+        <p class="speaker-other">Nainen: Kurssimaksu on 85 euroa.</p>
+        <p class="speaker-you">Sinä (10 sek): Lopeta puhelu.</p>
+        <div class="model-answer">
+          <strong class="label">Mallivastaus:</strong> Selvä, kiitos paljon tiedoista. Ilmoittaudun verkkosivujen kautta tänään. Hyvää päivänjatkoa, kuulemiin!
+        </div>
+        <p class="speaker-other">Nainen: Kiitos, samoin. Kuulemiin!</p>
+      </div>
+
+      <h3 id="doc2-sec3">3. Keskustelu: käytetyn huonekalun ostaminen</h3>
+      <p><strong>Tehtävä:</strong> Olet laittanut ilmoituksen, että haluat ostaa käytetyn ruokapöydän. Myyjä soittaa sinulle. Kysy pöydästä ja sovi mahdollisesta hakemisesta.</p>
+      <p><strong>Huomio:</strong> Sinä aloitat puhumisen heti äänimerkin jälkeen.</p>
+      <h4>Puhelu</h4>
+
+      <div class="dialogue-turn">
+        <p class="speaker-you">Sinä (10 sek): Vastaa puhelimeen.</p>
+        <div class="model-answer">
+          <strong class="label">Mallivastaus:</strong> Haloo, tässä puhuu Antti.
+        </div>
+      </div>
+
+      <div class="dialogue-turn">
+        <p class="speaker-other">Mies: Hei, soitit eilen ruokapöydästä, jonka olen ilmoittanut myytäväksi.</p>
+        <p class="speaker-you">Sinä (20 sek): Vastaa ja kerro, millaista pöytää etsit.</p>
+        <div class="model-answer">
+          <strong class="label">Mallivastaus:</strong> Hei, kiitos kun soitit takaisin. Etsin melko pientä ruokapöytää keittiööni. Ilmoituksesi pöytä näytti sopivan kokoiselta, ja haluaisin kuulla siitä vähän lisää.
+        </div>
+      </div>
+
+      <div class="dialogue-turn">
+        <p class="speaker-other">Mies: Pöytä on vaaleaa puuta, ja sen mukana tulee neljä tuolia. Pöytä on käytetty, mutta hyvässä kunnossa.</p>
+        <p class="speaker-you">Sinä (20 sek): Kysy pöydän koosta ja kunnosta.</p>
+        <div class="model-answer">
+          <strong class="label">Mallivastaus:</strong> Kuulostaa hyvältä. Mitkä ovat pöydän mitat? Näkyykö siinä naarmuja tai muita käytön jälkiä? Haluaisin myös tietää, voiko pöydän pituutta muuttaa tai jatkaa tarvittaessa.
+        </div>
+      </div>
+
+      <div class="dialogue-turn">
+        <p class="speaker-other">Mies: Pöytä on 120 senttimetriä pitkä ja 80 senttimetriä leveä. Siinä on pieniä naarmuja, mutta ei mitään vakavaa. Pöytää ei voi jatkaa.</p>
+        <p class="speaker-you">Sinä (20 sek): Vastaa ja kysy hinnasta.</p>
+        <div class="model-answer">
+          <strong class="label">Mallivastaus:</strong> Mitat voisivat sopia minun keittiööni. Pienet naarmut eivät haittaa, jos pöytä on muuten tukeva. Ilmoituksessa hinta oli 90 euroa. Onko hinta edelleen sama, vai voiko siitä vielä neuvotella?
+        </div>
+      </div>
+
+      <div class="dialogue-turn">
+        <p class="speaker-other">Mies: Voisin myydä sen 80 eurolla, jos tulet hakemaan pöydän tällä viikolla.</p>
+        <p class="speaker-you">Sinä (20 sek): Vastaa ja kysy, miten pöytä pitää kuljettaa.</p>
+        <div class="model-answer">
+          <strong class="label">Mallivastaus:</strong> 80 euroa sopii minulle. Haluaisin vielä kysyä, saako pöydän jalat irrotettua kuljetusta varten. Tarvitsenko oman työkalun mukaan, vai pystyttekö purkamaan pöydän valmiiksi?
+        </div>
+      </div>
+
+      <div class="dialogue-turn">
+        <p class="speaker-other">Mies: Pöydän jalat saa irti, ja voin purkaa sen ennen kuin tulet.</p>
+        <p class="speaker-you">Sinä (25 sek): Ehdota sopivaa aikaa ja kerro, miten tulet hakemaan pöydän.</p>
+        <div class="model-answer">
+          <strong class="label">Mallivastaus:</strong> Se olisi oikein hyvä. Pääsisin hakemaan pöydän lauantaina iltapäivällä, ehkä noin kello kolmelta. Tulen autolla, joten pystyn kuljettamaan pöydän ja tuolit itse. Voisitko lähettää osoitteesi viestillä ja kertoa, onko lähellä paikkaa, johon voin pysäköidä auton?
+        </div>
+      </div>
+
+      <div class="dialogue-turn">
+        <p class="speaker-other">Mies: Lauantai kello kolme sopii. Lähetän sinulle osoitteen ja pysäköintiohjeet.</p>
+        <p class="speaker-you">Sinä (10 sek): Vahvista tapaaminen ja lopeta puhelu.</p>
+        <div class="model-answer">
+          <strong class="label">Mallivastaus:</strong> Hienoa, nähdään lauantaina kello kolme. Kiitos tiedoista ja avusta. Hei hei!
+        </div>
+      </div>
+
+      <h3 id="doc2-sec4">4. Tilanteet</h3>
+      <p>Kuulet tilanteen numeron ja saat 20 sekuntia aikaa tutustua tehtävään. Kun kuulet “Puhu nyt”, vastaa suomeksi.</p>
+
+      <h4>Tilanne 1: Ruokasuositus</h4>
+      <div class="meta-bar"><span>Vastausaika: 20 sekuntia</span></div>
+      <p>Ystäväsi kysyy, mitä ruokaa teit viikonloppuna. Kerro ruoasta ja siitä, miten valmistit sen.</p>
+      <div class="model-answer">
+        <strong class="label">Mallivastaus:</strong> Tein viikonloppuna kasvislasagnea. Siinä oli tomaattikastiketta, kesäkurpitsaa ja juustoa. Valmistamiseen meni vähän yli tunti, mutta ruoka oli helppo tehdä. Tein ison annoksen, joten sitä riitti myös seuraavan päivän lounaaksi.
+      </div>
+
+      <h4>Tilanne 2: Kirjaston aukioloajat</h4>
+      <div class="meta-bar"><span>Vastausaika: 30 sekuntia</span></div>
+      <p>Soitat kirjastoon ja kysyt, onko kirjasto auki sunnuntaina. Haluat myös tietää, voiko kirjat palauttaa silloin, vaikka kirjasto olisi suljettu.</p>
+      <div class="model-answer">
+        <strong class="label">Mallivastaus:</strong> Hyvää päivää. Haluaisin kysyä kirjaston sunnuntain aukioloajoista. Onko kirjasto ensi sunnuntaina auki, ja jos on, mihin aikaan? Minulla olisi myös kirjoja palautettavana. Voiko ne palauttaa palautusluukkuun silloin, jos kirjasto on suljettu? Haluaisin varmistaa, että kirjoista ei tule myöhästymismaksua.
+      </div>
+
+      <h4>Tilanne 3: Lapsen koulutapahtuma</h4>
+      <div class="meta-bar"><span>Vastausaika: 30 sekuntia</span></div>
+      <p>Soitat lapsesi opettajalle ja kerrot, ettet pääse osallistumaan koulun vanhempainiltaan. Pyydä mahdollisuutta saada tärkeimmät tiedot myöhemmin.</p>
+      <div class="model-answer">
+        <strong class="label">Mallivastaus:</strong> Hyvää päivää, tässä on Leena Virtanen. Soitan lapseni luokan vanhempainillasta. Valitettavasti en pääse osallistumaan siihen keskiviikkona, koska olen silloin työmatkalla. Olisiko mahdollista saada tärkeimmät tiedot sähköpostilla tai sopia toinen aika, jolloin voisimme keskustella? Pahoittelen, etten pääse paikalle.
+      </div>
+
+      <h4>Tilanne 4: Ruoka-annoksen vaihtaminen ravintolassa</h4>
+      <div class="meta-bar"><span>Vastausaika: 30 sekuntia</span></div>
+      <p>Olet ravintolassa ja huomaat, että sait väärän annoksen. Kerro asiasta tarjoilijalle kohteliaasti ja pyydä apua.</p>
+      <div class="model-answer">
+        <strong class="label">Mallivastaus:</strong> Anteeksi, voisitteko auttaa minua? Tilasin kasvispasta-annoksen, mutta sain kana-annoksen. En ole vielä aloittanut syömistä. Voisitteko tarkistaa tilaukseni ja vaihtaa annoksen oikeaan? Ymmärrän, että keittiössä voi sattua virheitä. Kiitos paljon avusta.
+      </div>
+
+      <h4>Tilanne 5: Naapurin auton pysäköinti</h4>
+      <div class="meta-bar"><span>Vastausaika: 30 sekuntia</span></div>
+      <p>Tapaat naapurisi rappukäytävässä. Hänen autonsa on pysäköity sinun varatulle paikallesi. Kerro tilanteesta kohteliaasti ja pyydä häntä siirtämään auto.</p>
+      <div class="model-answer">
+        <strong class="label">Mallivastaus:</strong> Hei, haluaisin kysyä autostasi. Se on tällä hetkellä pysäköity minun nimetyllä autopaikalleni. Ehkä paikat menivät sekaisin, mutta tarvitsisin paikan omaa autoani varten. Voisitko siirtää auton toiseen paikkaan mahdollisimman pian? Voin näyttää sinulle, missä sinun paikkasi on.
+      </div>
+
+      <h3 id="doc2-sec5">5. Mielipide</h3>
+      <p>Valitse joko A tai B. Sinulla on 2 minuuttia aikaa puhua. Perustele mielipiteesi ja yritä puhua koko vastausaika.</p>
+
+      <h4>A) Vapaa-aika ja kiire</h4>
+      <p>Kerro esimerkiksi:</p>
+      <ul>
+        <li>Miten ihmiset viettävät vapaa-aikaansa?</li>
+        <li>Onko ihmisillä mielestäsi riittävästi vapaa-aikaa?</li>
+        <li>Miten työ tai opiskelu vaikuttaa vapaa-aikaan?</li>
+        <li>Onko tärkeää suunnitella vapaa-aikaa etukäteen?</li>
+        <li>Mitä itse haluaisit tehdä enemmän vapaa-ajalla?</li>
+      </ul>
+      <div class="model-answer">
+        <strong class="label">Mallivastaus:</strong>
+        <p>Minusta vapaa-aika on tärkeää, koska ihmiset tarvitsevat aikaa palautumiseen. Monet viettävät vapaa-aikaa perheen ja ystävien kanssa, harrastavat liikuntaa tai katsovat televisiota. Jotkut haluavat olla kotona rauhassa, kun taas toiset tapaavat mielellään muita ihmisiä.</p>
+        <p>Mielestäni monilla ihmisillä on nykyään liian vähän vapaa-aikaa. Työpäivät voivat olla pitkiä, ja niiden lisäksi ihmisillä on kotitöitä ja muita velvollisuuksia. Opiskelijoilla taas voi olla paljon tehtäviä ja kokeisiin valmistautumista. Jos vapaa-aikaa on vähän, ihminen voi helposti väsyä tai kokea jatkuvaa kiirettä.</p>
+        <p>Vapaa-aikaa ei kuitenkaan tarvitse täyttää monilla harrastuksilla. Joskus on hyvä vain levätä tai käydä kävelyllä. Tärkeintä on, että ihmisellä on mahdollisuus tehdä välillä jotain, mistä hän pitää.</p>
+        <p>Suunnittelen mielelläni joitakin vapaa-ajan menoja etukäteen, esimerkiksi tapaamisia ystävien kanssa tai matkoja. Jos kaikki sovitaan viime hetkellä, kalenterit voivat olla jo täynnä. Toisaalta jokaista iltaa ei tarvitse suunnitella. On hyvä jättää aikaa myös spontaanille tekemiselle.</p>
+        <p>Itse haluaisin viettää enemmän aikaa ulkona ja nähdä ystäviä useammin. Olen huomannut, että lyhytkin kävely auttaa minua rentoutumaan työpäivän jälkeen. Kaiken kaikkiaan vapaa-ajan määrän lisäksi tärkeää on se, että ihminen saa käyttää sen tavalla, joka tuntuu itselle hyvältä.</p>
+      </div>
+
+      <h4>B) Roskien lajittelu ja kierrättäminen</h4>
+      <p>Kerro esimerkiksi:</p>
+      <ul>
+        <li>Lajitellaanko jätteitä asuinalueellasi?</li>
+        <li>Miksi lajittelu on tärkeää?</li>
+        <li>Onko lajittelu mielestäsi helppoa vai vaikeaa?</li>
+        <li>Miten ihmiset voisi saada kierrättämään enemmän?</li>
+        <li>Pitäisikö kauppojen ja yritysten tehdä enemmän jätteen vähentämiseksi?</li>
+      </ul>
+      <div class="model-answer">
+        <strong class="label">Mallivastaus:</strong>
+        <p>Minusta roskien lajittelu ja kierrättäminen ovat tärkeitä, koska niiden avulla materiaaleja voidaan käyttää uudelleen. Jos kaikki jätteet laitetaan samaan roskakoriin, hyödyllisiä materiaaleja menee hukkaan. Kierrättäminen voi myös vähentää uusien raaka-aineiden tarvetta.</p>
+        <p>Asuinalueellani on keräyspisteitä paperille, kartongille, lasille, metallille ja biojätteelle. Lajittelu ei ole vaikeaa, jos astiat ovat lähellä ja niiden merkinnät ovat selkeät. Joskus voi kuitenkin olla epävarma siitä, mihin jokin pakkaus kuuluu. Siksi ohjeiden pitäisi olla helposti ymmärrettäviä.</p>
+        <p>Ihmisiä voisi kannustaa kierrättämään tekemällä lajittelusta mahdollisimman helppoa. Taloyhtiöissä olisi hyvä olla tarvittavat keräysastiat, ja niihin voisi laittaa selkeät esimerkit sopivista jätteistä. Kouluissa ja työpaikoilla voitaisiin myös kertoa, miksi lajittelu on hyödyllistä.</p>
+        <p>Myös kaupoilla ja yrityksillä on vastuuta. Ne voisivat vähentää tarpeettomia pakkauksia ja käyttää materiaaleja, jotka voidaan kierrättää. Asiakkaiden pitäisi voida valita tuotteita, joissa on vähemmän pakkausmateriaalia.</p>
+        <p>Minusta yksittäisen ihmisen tekemillä valinnoilla on merkitystä, mutta vastuu ei voi olla vain kuluttajilla. Yritysten, kuntien ja kotitalouksien pitää tehdä yhteistyötä. Kun kierrättäminen on helppoa ja tarjolla on hyvät vaihtoehdot, useammat ihmiset todennäköisesti tekevät sitä.</p>
+      </div>
+
+      <h3 id="doc2-sec6">Aikataulut yhteenvetona</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Tehtävä</th>
+            <th>Valmistautumis- tai tutustumisaika</th>
+            <th>Vastausaika</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Kertominen</td>
+            <td>1 min</td>
+            <td>1 min 30 s</td>
+          </tr>
+          <tr>
+            <td>Kurssille ilmoittautuminen</td>
+            <td>Ohjeessa ei ilmoitettu</td>
+            <td>20 s, 20 s, 10 s, 15 s, 20 s, 10 s ja 10 s</td>
+          </tr>
+          <tr>
+            <td>Huonekalun ostaminen</td>
+            <td>Ohjeessa ei ilmoitettu</td>
+            <td>10 s, 20 s, 20 s, 20 s, 25 s ja 10 s</td>
+          </tr>
+          <tr>
+            <td>Tilanne 1</td>
+            <td>20 s</td>
+            <td>20 s</td>
+          </tr>
+          <tr>
+            <td>Tilanne 2</td>
+            <td>20 s</td>
+            <td>30 s</td>
+          </tr>
+          <tr>
+            <td>Tilanne 3</td>
+            <td>20 s</td>
+            <td>30 s</td>
+          </tr>
+          <tr>
+            <td>Tilanne 4</td>
+            <td>20 s</td>
+            <td>30 s</td>
+          </tr>
+          <tr>
+            <td>Tilanne 5</td>
+            <td>20 s</td>
+            <td>30 s</td>
+          </tr>
+          <tr>
+            <td>Mielipide</td>
+            <td>Ohjeessa ei ilmoitettu</td>
+            <td>2 min</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="tip-box">
+        <strong>Harjoitteluvinkki:</strong> Käytä vastausaikoihin ajastinta. Puhu selkeästi, vastaa tehtävän aiheeseen ja lisää perusteluja tai esimerkkejä, jos saat vastauksesi valmiiksi ennen ajan loppumista.
+      </div>
+
+      <a href="#top" class="back-to-top">↑ Takaisin ylös (Sisällysluettelo)</a>
+    </section>
+
+    <!-- =====================================================================
+         DOCUMENT 3: YKI-speaking-8.docx
+         ===================================================================== -->
+    <section id="doc-3" class="doc-section">
+      <span class="doc-badge">Tiedosto 3: YKI-speaking-8.docx</span>
+      <h2>YKI-testi, suomi – keskitaso (B): puhuminen</h2>
+      <p class="doc-subtitle">Harjoituskoe joulukuulle 2026</p>
+      <p class="intro-note">Tämä on uusi, epävirallinen harjoituskoe, joka mukailee antamiasi tehtävätyyppejä ja vastausaikoja. Se ei ole virallinen joulukuun 2026 YKI-koe, eikä varsinaisen kokeen aiheita tai tehtäviä voi tietää etukäteen. Mallivastaukset ovat harjoittelua varten — voit vastata myös omin sanoin.</p>
+
+      <h3 id="doc3-sec1">1. Kertominen</h3>
+      <div class="meta-bar">
+        <span>Valmistautumisaika: 1 minuutti</span>
+        <span>Vastausaika: 1 minuutti 30 sekuntia</span>
+      </div>
+      <p><strong>Äänite:</strong> Kuulet: “Aloita puhuminen nyt.”</p>
+      <p><strong>Tehtävä:</strong> Kerro jostakin taidosta, jonka olet oppinut. Voit kertoa esimerkiksi:</p>
+      <ul>
+        <li>Mitä opit?</li>
+        <li>Milloin ja miten opit sen?</li>
+        <li>Oliko oppiminen helppoa vai vaikeaa?</li>
+        <li>Kuka auttoi sinua?</li>
+        <li>Mihin käytät taitoa nykyään?</li>
+        <li>Mitä haluaisit oppia seuraavaksi?</li>
+      </ul>
+      <div class="model-answer">
+        <strong class="label">Mallivastaus:</strong>
+        <p>Olen oppinut tekemään ruokaa paremmin viime vuosien aikana. Aikaisemmin osasin valmistaa vain muutamia yksinkertaisia ruokia, mutta aloin harjoitella, kun muutin ensimmäistä kertaa omaan asuntoon.</p>
+        <p>Aluksi ruoanlaitto tuntui vaikealta, koska en aina tiennyt, kuinka kauan ruokia piti kypsentää tai mitä mausteita kannatti käyttää. Katsoin reseptejä netistä ja kysyin neuvoja äidiltäni. Hän opetti minulle esimerkiksi, miten keitto tehdään ja miten vihanneksia kannattaa käsitellä.</p>
+        <p>Nykyään teen ruokaa melkein joka päivä. Osaan valmistaa muutamia hyviä arkiruokia, kuten kasviskeittoa, uunilohta ja erilaisia pastoja. Ruoanlaitto auttaa myös säästämään rahaa, koska kotona tehty ruoka on usein halvempaa kuin ravintolassa syöminen.</p>
+        <p>Pidän siitä, että voin kokeilla uusia makuja. Kaikki kokeilut eivät tietenkään onnistu, mutta siitä oppii. Haluaisin seuraavaksi oppia leipomaan paremmin. Osaan tehdä helppoja leivonnaisia, mutta esimerkiksi leipätaikinan tekeminen on minulle vielä vähän vaikeaa.</p>
+      </div>
+
+      <h3 id="doc3-sec2">2. Keskustelu: taloyhtiön pesutupa</h3>
+      <p><strong>Tehtävä:</strong> Soitat taloyhtiön huoltoyhtiöön, koska haluat varata pesutuvan käyttöön. Kerro tilanteestasi ja kysy käytännön asioista.</p>
+      <h4>Puhelu</h4>
+
+      <div class="dialogue-turn">
+        <p class="speaker-other">Nainen: Hyvää päivää, huoltoyhtiö Kuura. Kuinka voin auttaa?</p>
+        <p class="speaker-you">Sinä (20 sek): Esittele itsesi ja kerro asiasi.</p>
+        <div class="model-answer">
+          <strong class="label">Mallivastaus:</strong> Hyvää päivää. Nimeni on Jari Salonen, ja asun taloyhtiössä osoitteessa Koivukatu 12. Haluaisin varata pesutuvan käyttöön ensi viikolla. Voisitteko neuvoa, miten varaus tehdään?
+        </div>
+      </div>
+
+      <div class="dialogue-turn">
+        <p class="speaker-other">Nainen: Pesutuvan voi varata taloyhtiön varausjärjestelmästä. Milloin haluaisit käyttää sitä?</p>
+        <p class="speaker-you">Sinä (20 sek): Kerro, milloin haluaisit varata pesutuvan.</p>
+        <div class="model-answer">
+          <strong class="label">Mallivastaus:</strong> Minulle sopisi parhaiten ensi viikon torstai-iltana, esimerkiksi kello viidestä kahdeksaan. Jos se aika ei ole vapaa, myös perjantai-iltapäivä voisi sopia.
+        </div>
+      </div>
+
+      <div class="dialogue-turn">
+        <p class="speaker-other">Nainen: Torstaina kello viidestä kahdeksaan on vielä vapaa aika. Haluatko varata sen?</p>
+        <p class="speaker-you">Sinä (10 sek): Vastaa.</p>
+        <div class="model-answer">
+          <strong class="label">Mallivastaus:</strong> Kyllä, kiitos. Varaan mielelläni torstain kello viidestä kahdeksaan.
+        </div>
+      </div>
+
+      <div class="dialogue-turn">
+        <p class="speaker-other">Nainen: Hyvä. Varausjärjestelmään kirjaudutaan asunnon numerolla ja salasanalla.</p>
+        <p class="speaker-you">Sinä (15 sek): Kerro, jos tarvitset apua järjestelmän käytössä.</p>
+        <div class="model-answer">
+          <strong class="label">Mallivastaus:</strong> En ole käyttänyt järjestelmää aikaisemmin, joten en ole varma, mistä löydän sen. Voisitteko lähettää minulle linkin ja ohjeet sähköpostitse?
+        </div>
+      </div>
+
+      <div class="dialogue-turn">
+        <p class="speaker-other">Nainen: Voin lähettää ohjeet. Pesutuvassa on pesukone ja kuivausrumpu. Haluatko kysyä niiden käytöstä?</p>
+        <p class="speaker-you">Sinä (20 sek): Kysy jotakin tarkemmin pesutuvan käytöstä.</p>
+        <div class="model-answer">
+          <strong class="label">Mallivastaus:</strong> Kyllä, kiitos. Haluaisin tietää, täytyykö pesuaine tuoda itse vai onko sitä pesutuvassa. Saako kuivausrumpua käyttää samalla varausvuorolla, ja pitääkö pesutupa siivota käytön jälkeen?
+        </div>
+      </div>
+
+      <div class="dialogue-turn">
+        <p class="speaker-other">Nainen: Pesuaine pitää tuoda itse. Kuivausrumpua saa käyttää, ja pesutupa pitää jättää siistiksi.</p>
+        <p class="speaker-you">Sinä (10 sek): Kysy, maksaako pesutuvan käyttö jotakin.</p>
+        <div class="model-answer">
+          <strong class="label">Mallivastaus:</strong> Selvä. Maksaako pesutuvan käyttö erikseen, vai sisältyykö se taloyhtiön maksuihin?
+        </div>
+      </div>
+
+      <div class="dialogue-turn">
+        <p class="speaker-other">Nainen: Käyttö sisältyy taloyhtiön maksuihin.</p>
+        <p class="speaker-you">Sinä (10 sek): Lopeta puhelu.</p>
+        <div class="model-answer">
+          <strong class="label">Mallivastaus:</strong> Kiitos paljon avusta. Jään odottamaan ohjeita ja teen varauksen. Hyvää päivänjatkoa, kuulemiin!
+        </div>
+        <p class="speaker-other">Nainen: Kiitos samoin. Kuulemiin!</p>
+      </div>
+
+      <h3 id="doc3-sec3">3. Keskustelu: polkupyörän huolto</h3>
+      <p><strong>Tehtävä:</strong> Olet soittanut pyöräkorjaamoon, koska polkupyöräsi ei toimi kunnolla. Kerro ongelmasta ja sovi huollosta.</p>
+      <p><strong>Huomio:</strong> Sinä aloitat puhumisen heti äänimerkin jälkeen.</p>
+      <h4>Puhelu</h4>
+
+      <div class="dialogue-turn">
+        <p class="speaker-you">Sinä (10 sek): Vastaa puhelimeen.</p>
+        <div class="model-answer">
+          <strong class="label">Mallivastaus:</strong> Haloo, tässä puhuu Nina.
+        </div>
+      </div>
+
+      <div class="dialogue-turn">
+        <p class="speaker-other">Mies: Hei, soititte pyöräkorjaamoon. Miten voimme auttaa?</p>
+        <p class="speaker-you">Sinä (20 sek): Kerro, mitä ongelmaa polkupyörässä on.</p>
+        <div class="model-answer">
+          <strong class="label">Mallivastaus:</strong> Hei. Polkupyöräni takajarru ei toimi kunnolla, ja takarengas tuntuu myös vähän tyhjältä. Haluaisin tuoda pyörän tarkistettavaksi. Tarvitsen sitä päivittäin työmatkoihin, joten toivoisin, että se saataisiin kuntoon mahdollisimman pian.
+        </div>
+      </div>
+
+      <div class="dialogue-turn">
+        <p class="speaker-other">Mies: Milloin huomasit ongelman? Onko pyörä kaatunut tai sattunut jokin muu vahinko?</p>
+        <p class="speaker-you">Sinä (20 sek): Vastaa.</p>
+        <div class="model-answer">
+          <strong class="label">Mallivastaus:</strong> Huomasin ongelman muutama päivä sitten. Pyörä ei ole kaatunut, eikä siihen ole tullut mitään isoa kolhua. Jarru alkoi vain pitää outoa ääntä, ja tänä aamuna huomasin, ettei se pysäyttänyt pyörää yhtä hyvin kuin tavallisesti.
+        </div>
+      </div>
+
+      <div class="dialogue-turn">
+        <p class="speaker-other">Mies: Meillä on vapaa huoltoaika huomenna aamupäivällä. Sopisiko se sinulle?</p>
+        <p class="speaker-you">Sinä (20 sek): Vastaa ja kysy samalla, kuinka kauan huolto kestää.</p>
+        <div class="model-answer">
+          <strong class="label">Mallivastaus:</strong> Huomisaamupäivä sopii. Haluaisin kuitenkin tietää, kuinka kauan korjaus yleensä kestää. Pystynkö odottamaan paikan päällä, vai pitääkö pyörä jättää korjaamolle?
+        </div>
+      </div>
+
+      <div class="dialogue-turn">
+        <p class="speaker-other">Mies: Jarrun ja renkaan tarkistaminen kestää yleensä noin tunnin. Jos tarvitsemme varaosia, huolto voi kestää pidempään.</p>
+        <p class="speaker-you">Sinä (20 sek): Kysy korjauksen hinnasta ja varaosista.</p>
+        <div class="model-answer">
+          <strong class="label">Mallivastaus:</strong> Selvä. Paljonko tavallinen tarkistus ja jarrun säätäminen yleensä maksavat? Soitatteko minulle ennen kuin teette lisäkorjauksia, jos pyörään tarvitaan uusia osia?
+        </div>
+      </div>
+
+      <div class="dialogue-turn">
+        <p class="speaker-other">Mies: Kyllä, soitamme aina asiakkaalle ennen lisätöitä. Hinta riippuu siitä, mitä pitää korjata.</p>
+        <p class="speaker-you">Sinä (25 sek): Sovi tarkka aika ja kerro, milloin tuot pyörän.</p>
+        <div class="model-answer">
+          <strong class="label">Mallivastaus:</strong> Hyvä. Voisinko tuoda pyörän huomenna kello yhdeksältä? Jos korjaus kestää vain noin tunnin, voisin odottaa lähistöllä. Kertoisitteko vielä, missä korjaamo sijaitsee ja onko sen lähellä paikkaa, johon voin lukita pyörän?
+        </div>
+      </div>
+
+      <div class="dialogue-turn">
+        <p class="speaker-other">Mies: Kello yhdeksän sopii. Korjaamo on Asemakatu 8:ssa, ja oven vieressä on pyöräteline.</p>
+        <p class="speaker-you">Sinä (10 sek): Vahvista aika ja lopeta puhelu.</p>
+        <div class="model-answer">
+          <strong class="label">Mallivastaus:</strong> Selvä, tuon pyörän huomenna kello yhdeksältä. Kiitos tiedoista, kuulemiin!
+        </div>
+      </div>
+
+      <h3 id="doc3-sec4">4. Tilanteet</h3>
+      <p>Jokaisessa tehtävässä kuulet tilanteen numeron ja saat 20 sekuntia aikaa tutustua siihen. Kun kuulet “Puhu nyt”, sano pyydetyt asiat suomeksi.</p>
+
+      <h4>Tilanne 1: Talvivaatteet</h4>
+      <div class="meta-bar"><span>Vastausaika: 20 sekuntia</span></div>
+      <p>Ystäväsi kysyy, miten pukeudut kylmällä säällä. Kerro, mitä vaatteita käytät ja miksi.</p>
+      <div class="model-answer">
+        <strong class="label">Mallivastaus:</strong> Pukeudun kylmällä säällä lämpimästi kerroksittain. Käytän villapaitaa, talvitakkia, pipoa, hanskoja ja lämpimiä kenkiä. Jos ulkona on hyvin kylmä, laitan myös kaulahuivin. Minusta on mukavampaa olla ulkona, kun vaatteet suojaavat tuulelta ja pakkaselta.
+      </div>
+
+      <h4>Tilanne 2: Tapaaminen lääkärin kanssa</h4>
+      <div class="meta-bar"><span>Vastausaika: 30 sekuntia</span></div>
+      <p>Soitat terveyskeskukseen ja pyydät aikaa lääkärille. Kerro lyhyesti, miksi haluat ajan ja milloin sinulle sopisi.</p>
+      <div class="model-answer">
+        <strong class="label">Mallivastaus:</strong> Hyvää päivää. Haluaisin varata ajan lääkärille. Minulla on ollut selkäkipua noin viikon ajan, ja se haittaa nukkumista ja liikkumista. Minulle sopisi aika aamupäivällä, mutta voin tulla myös iltapäivällä. Onko teillä lähiaikoina vapaita aikoja? Voin kertoa oireista tarkemmin vastaanotolla.
+      </div>
+
+      <h4>Tilanne 3: Kutsusta kieltäytyminen</h4>
+      <div class="meta-bar"><span>Vastausaika: 30 sekuntia</span></div>
+      <p>Ystäväsi kutsuu sinut viikonloppuna elokuviin, mutta et pääse mukaan. Kieltäydy kohteliaasti, selitä miksi ja ehdota toista tapaamista.</p>
+      <div class="model-answer">
+        <strong class="label">Mallivastaus:</strong> Kiitos kutsusta, olisi ollut mukava tulla mukaan, mutta en valitettavasti pääse tänä viikonloppuna. Minulla on jo sovittu tapaaminen sukulaiseni kanssa. Voisimmeko mennä elokuviin ensi viikonloppuna tai tavata kahvilassa ensi viikolla? Kerro, mikä päivä sopii sinulle.
+      </div>
+
+      <h4>Tilanne 4: Ruoan tilaaminen kahvilassa</h4>
+      <div class="meta-bar"><span>Vastausaika: 30 sekuntia</span></div>
+      <p>Olet kahvilassa ja haluat tilata lounaan. Kysy, mitä kasvisvaihtoehtoja on tarjolla ja voitko saada annoksen mukaan.</p>
+      <div class="model-answer">
+        <strong class="label">Mallivastaus:</strong> Hei. Haluaisin tilata lounaan, mutta syön kasvisruokaa. Mitä kasvisvaihtoehtoja teillä on tänään? Onko esimerkiksi keitto kasvisruokaa? Haluaisin myös ottaa annoksen mukaan, jos se on mahdollista. Voisitteko kertoa, kuinka kauan sen valmistaminen kestää?
+      </div>
+
+      <h4>Tilanne 5: Väärä lasku</h4>
+      <div class="meta-bar"><span>Vastausaika: 30 sekuntia</span></div>
+      <p>Soitat yrityksen asiakaspalveluun, koska sait laskun, jonka summaa et ymmärrä. Kerro asiasta ja pyydä selvitystä.</p>
+      <div class="model-answer">
+        <strong class="label">Mallivastaus:</strong> Hyvää päivää. Soitan viime viikolla saamastani laskusta. Laskun summa on suurempi kuin tavallisesti, enkä ymmärrä, mistä lisämaksu tulee. Voisitteko tarkistaa laskun ja selittää, mitä summa sisältää? Minulla on lasku tässä edessäni, joten voin antaa tarvittavat asiakastiedot.
+      </div>
+
+      <h3 id="doc3-sec5">5. Mielipide</h3>
+      <p>Valitse joko A tai B. Sinulla on 2 minuuttia aikaa puhua. Perustele mielipiteesi ja yritä puhua koko vastausaika.</p>
+
+      <h4>A) Matkailu kotimaassa ja ulkomailla</h4>
+      <p>Kerro esimerkiksi:</p>
+      <ul>
+        <li>Miksi ihmiset matkustavat?</li>
+        <li>Mitä hyviä ja huonoja puolia kotimaanmatkailussa on?</li>
+        <li>Miksi jotkut haluavat matkustaa ulkomaille?</li>
+        <li>Millaisia asioita matkaa suunnitellessa kannattaa ottaa huomioon?</li>
+        <li>Millainen matkailu sopii sinulle parhaiten?</li>
+      </ul>
+      <div class="model-answer">
+        <strong class="label">Mallivastaus:</strong>
+        <p>Ihmiset matkustavat monista syistä. Jotkut haluavat nähdä uusia paikkoja, tutustua eri kulttuureihin tai tavata ystäviä ja sukulaisia. Toiset matkustavat, koska haluavat levätä ja päästä hetkeksi pois tavallisesta arjesta.</p>
+        <p>Kotimaanmatkailun hyvä puoli on se, että matkalle ei välttämättä tarvitse lähteä kovin kauas. Suomessa voi nähdä erilaisia maisemia, kuten järviä, metsiä ja rannikkoa. Kotimaassa on myös helpompi käyttää samaa kieltä, ja matkustaminen voi tuntua tutummalta. Huonona puolena voi olla se, että majoitus tai ravintolat ovat joskus kalliita, vaikka matkustaisi vain lyhyen matkan.</p>
+        <p>Ulkomaille matkustaminen kiinnostaa ihmisiä, koska siellä voi nähdä erilaisia kaupunkeja, ruokia ja elämäntapoja. Matkan aikana voi myös harjoitella vieraita kieliä. Toisaalta pitkät lennot ja matkustaminen voivat väsyttää, ja matka voi olla kallis. On myös hyvä miettiä matkustamisen ympäristövaikutuksia.</p>
+        <p>Matkaa suunnitellessa kannattaa ottaa huomioon budjetti, sää, matkustusajat ja se, millaisia asioita haluaa tehdä. Minusta suunnittelussa pitää olla sopivasti joustavuutta. On hyvä varata tärkeimmät asiat etukäteen, mutta kaikkea ei tarvitse päättää tarkasti.</p>
+        <p>Itse pidän rauhallisista matkoista, joilla voi kävellä, tutustua paikalliseen ruokaan ja nähdä maisemia. Minulle tärkeintä ei ole käydä mahdollisimman monessa paikassa, vaan saada aikaa nauttia matkasta.</p>
+      </div>
+
+      <h4>B) Puhelimen käyttö arjessa</h4>
+      <p>Kerro esimerkiksi:</p>
+      <ul>
+        <li>Mihin ihmiset käyttävät puhelinta päivittäin?</li>
+        <li>Mitä hyötyä älypuhelimesta on?</li>
+        <li>Millaisia ongelmia liiallisesta puhelimen käytöstä voi tulla?</li>
+        <li>Pitäisikö puhelimen käyttöä rajoittaa esimerkiksi ruokailun aikana?</li>
+        <li>Miten itse yrität käyttää puhelinta sopivasti?</li>
+      </ul>
+      <div class="model-answer">
+        <strong class="label">Mallivastaus:</strong>
+        <p>Puhelimesta on tullut tärkeä osa ihmisten arkea. Sillä voi soittaa, lähettää viestejä, lukea uutisia, käyttää karttaa ja hoitaa pankkiasioita. Puhelimella voi myös ottaa valokuvia, kuunnella musiikkia ja pitää yhteyttä ihmisiin, jotka asuvat kaukana.</p>
+        <p>Älypuhelimen hyöty on se, että monia asioita voi hoitaa nopeasti samasta laitteesta. Jos esimerkiksi etsii uutta osoitetta, karttasovellus auttaa löytämään perille. Puhelimella voi myös saada tärkeää tietoa nopeasti.</p>
+        <p>Liiallisesta käytöstä voi kuitenkin tulla ongelmia. Puhelimen katsominen myöhään illalla voi häiritä nukkumista. Lisäksi ihmiset saattavat keskittyä puhelimeen silloinkin, kun he ovat ystävien tai perheen kanssa. Jos puhelinta tarkistaa jatkuvasti, on vaikeampi keskittyä yhteen asiaan.</p>
+        <p>Minusta puhelimen käyttöä kannattaa rajoittaa joissakin tilanteissa. Esimerkiksi ruokailun aikana on mukavampaa keskustella muiden kanssa kuin katsoa koko ajan näyttöä. Myös oppitunneilla ja kokouksissa puhelin pitäisi laittaa sivuun, ellei sitä tarvita työhön.</p>
+        <p>Yritän itse pitää puhelimen välillä äänettömällä ja olla katsomatta sitä juuri ennen nukkumaanmenoa. Se ei aina onnistu, mutta pienet tauot auttavat. Puhelin on hyödyllinen väline, kun sitä käyttää tarkoituksenmukaisesti. Tärkeintä on, ettei se vie kaikkea huomiota muulta elämältä.</p>
+      </div>
+
+      <h3 id="doc3-sec6">Aikataulut yhteenvetona</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Tehtävä</th>
+            <th>Valmistautumis- tai tutustumisaika</th>
+            <th>Vastausaika</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Kertominen</td>
+            <td>1 min</td>
+            <td>1 min 30 s</td>
+          </tr>
+          <tr>
+            <td>Pesutuvan varaaminen</td>
+            <td>Ohjeessa ei ilmoitettu</td>
+            <td>20 s, 20 s, 10 s, 15 s, 20 s, 10 s ja 10 s</td>
+          </tr>
+          <tr>
+            <td>Polkupyörän huolto</td>
+            <td>Ohjeessa ei ilmoitettu</td>
+            <td>10 s, 20 s, 20 s, 20 s, 25 s ja 10 s</td>
+          </tr>
+          <tr>
+            <td>Tilanne 1</td>
+            <td>20 s</td>
+            <td>20 s</td>
+          </tr>
+          <tr>
+            <td>Tilanne 2</td>
+            <td>20 s</td>
+            <td>30 s</td>
+          </tr>
+          <tr>
+            <td>Tilanne 3</td>
+            <td>20 s</td>
+            <td>30 s</td>
+          </tr>
+          <tr>
+            <td>Tilanne 4</td>
+            <td>20 s</td>
+            <td>30 s</td>
+          </tr>
+          <tr>
+            <td>Tilanne 5</td>
+            <td>20 s</td>
+            <td>30 s</td>
+          </tr>
+          <tr>
+            <td>Mielipide</td>
+            <td>Ohjeessa ei ilmoitettu</td>
+            <td>2 min</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="tip-box">
+        Harjoittele vastaamista ajastimen kanssa. Keskustelutehtävissä reagoi siihen, mitä toinen henkilö sanoo; tilanteissa taas pyri kattamaan kaikki tehtävänannon pyytämät asiat.
+      </div>
+
+      <a href="#top" class="back-to-top">↑ Takaisin ylös (Sisällysluettelo)</a>
+    </section>
+
+    <!-- =====================================================================
+         DOCUMENT 4: YKI-speaking-9.docx
+         ===================================================================== -->
+    <section id="doc-4" class="doc-section">
+      <span class="doc-badge">Tiedosto 4: YKI-speaking-9.docx</span>
+      <h2>YKI-testi, suomi – keskitaso (B): puhuminen</h2>
+      <p class="doc-subtitle">Harjoituskoe tammikuulle 2026</p>
+      <p class="intro-note">Tämä on uusi, epävirallinen harjoituskoe, joka mukailee antamiasi tehtävätyyppejä ja vastausaikoja. Se ei ole virallinen tammikuun 2026 YKI-koe, eikä se kerro kyseisen kokeen todellisista tehtävistä. Mallivastaukset ovat harjoittelua varten — kokeessa voit vastata myös omin sanoin.</p>
+
+      <h3 id="doc4-sec1">1. Kertominen</h3>
+      <div class="meta-bar">
+        <span>Valmistautumisaika: 1 minuutti</span>
+        <span>Vastausaika: 1 minuutti 30 sekuntia</span>
+      </div>
+      <p><strong>Äänite:</strong> Kuulet: “Aloita puhuminen nyt.”</p>
+      <p><strong>Tehtävä:</strong> Kerro mukavasta päivästä, jonka olet viettänyt. Voit kertoa esimerkiksi:</p>
+      <ul>
+        <li>Milloin päivä oli?</li>
+        <li>Mitä teit?</li>
+        <li>Kenen kanssa olit?</li>
+        <li>Mikä päivästä teki mukavan?</li>
+        <li>Tapahtuiko jotakin yllättävää?</li>
+        <li>Haluaisitko viettää samanlaisen päivän uudelleen?</li>
+      </ul>
+      <div class="model-answer">
+        <strong class="label">Mallivastaus:</strong>
+        <p>Yksi erityisen mukava päivä oli viime kesänä, kun lähdin ystäväni kanssa retkelle läheiseen kansallispuistoon. Meillä oli molemmilla vapaa päivä, ja halusimme tehdä jotakin ulkona. Sää oli aurinkoinen, mutta ei liian kuuma.</p>
+        <p>Lähdimme aamulla bussilla ja kävelimme puistossa useita tunteja. Otimme mukaan eväitä, kuten voileipiä, hedelmiä ja kahvia. Matkan varrella pysähdyimme katselemaan maisemia ja ottamaan valokuvia. Reitti oli välillä hieman mäkinen, joten kävely oli myös hyvää liikuntaa.</p>
+        <p>Päivän paras hetki oli lounastauko järven rannalla. Siellä oli hiljaista, ja vesi oli aivan tyyni. Emme olleet suunnitelleet retkeä kovin tarkasti, joten oli mukavaa kulkea rauhallisesti ja pysähtyä silloin, kun halusimme.</p>
+        <p>Päivästä teki erityisen mukavan se, että sain viettää aikaa ystäväni kanssa ilman kiirettä. Meillä oli paljon puhuttavaa, eikä kumpikaan katsellut jatkuvasti puhelinta. Retken jälkeen olin väsynyt, mutta hyvällä tavalla. Haluaisin tehdä samanlaisen retken uudelleen, ehkä ensi keväänä.</p>
+      </div>
+
+      <h3 id="doc4-sec2">2. Keskustelu: uuden asunnon etsiminen</h3>
+      <p><strong>Tehtävä:</strong> Soitat vuokra-asuntoja välittävään yritykseen. Etsit asuntoa ja haluat kysyä vapaista asunnoista.</p>
+      <h4>Puhelu</h4>
+
+      <div class="dialogue-turn">
+        <p class="speaker-other">Mies: Asuntopalvelu Pohjola, hyvää päivää. Kuinka voin auttaa?</p>
+        <p class="speaker-you">Sinä (20 sek): Esittele itsesi ja kerro, millaista asuntoa etsit.</p>
+        <div class="model-answer">
+          <strong class="label">Mallivastaus:</strong> Hyvää päivää. Nimeni on Sara Lehto. Etsin vuokra-asuntoa Joensuusta, koska olen aloittamassa uudessa työpaikassa keväällä. Haluaisin kysyä, onko teillä vapaita yksiöitä tai pieniä kaksioita.
+        </div>
+      </div>
+
+      <div class="dialogue-turn">
+        <p class="speaker-other">Mies: Milloin haluaisit muuttaa, ja millä alueella haluaisit asua?</p>
+        <p class="speaker-you">Sinä (20 sek): Kerro muuttoajankohdasta ja alueesta.</p>
+        <div class="model-answer">
+          <strong class="label">Mallivastaus:</strong> Haluaisin muuttaa helmikuun alussa. Minulle sopisi asunto keskustasta tai sellaiselta alueelta, josta pääsee helposti bussilla työpaikalleni. En tarvitse aivan suurta asuntoa, mutta toivoisin, että siellä olisi erillinen keittiö tai ainakin hyvä keittotila.
+        </div>
+      </div>
+
+      <div class="dialogue-turn">
+        <p class="speaker-other">Mies: Meillä on vapautumassa yksiö keskustan lähellä kuukauden lopussa. Haluatko kuulla siitä lisää?</p>
+        <p class="speaker-you">Sinä (10 sek): Vastaa.</p>
+        <div class="model-answer">
+          <strong class="label">Mallivastaus:</strong> Kyllä, mielelläni. Voisitteko kertoa asunnon pinta-alan ja vuokran?
+        </div>
+      </div>
+
+      <div class="dialogue-turn">
+        <p class="speaker-other">Mies: Asunto on 34 neliömetriä, ja vuokra on 720 euroa kuukaudessa. Vesi maksetaan erikseen.</p>
+        <p class="speaker-you">Sinä (15 sek): Vastaa ja kysy asunnon varustelusta.</p>
+        <div class="model-answer">
+          <strong class="label">Mallivastaus:</strong> Asunnon koko kuulostaa sopivalta. Haluaisin kysyä, kuuluuko siihen parveke ja onko talossa pesutupa. Onko asunnossa myös oma sauna vai yhteinen sauna taloyhtiössä?
+        </div>
+      </div>
+
+      <div class="dialogue-turn">
+        <p class="speaker-other">Mies: Asunnossa ei ole parveketta eikä omaa saunaa. Talossa on pesutupa ja yhteinen sauna.</p>
+        <p class="speaker-you">Sinä (20 sek): Kysy asunnon näytöstä ja vuokrasopimuksesta.</p>
+        <div class="model-answer">
+          <strong class="label">Mallivastaus:</strong> Voisinko tulla katsomaan asuntoa ennen kuin teen päätöksen? Haluaisin myös tietää, kuinka pitkä vuokrasopimus tehdään ja kuinka suuri vakuus pitää maksaa. Onko mahdollista tehdä sopimus toistaiseksi voimassa olevaksi?
+        </div>
+      </div>
+
+      <div class="dialogue-turn">
+        <p class="speaker-other">Mies: Näyttö voidaan järjestää ensi viikolla. Sopimus on toistaiseksi voimassa oleva, ja vakuus vastaa yhden kuukauden vuokraa.</p>
+        <p class="speaker-you">Sinä (10 sek): Kysy, milloin näyttö järjestetään.</p>
+        <div class="model-answer">
+          <strong class="label">Mallivastaus:</strong> Kiitos. Minulle sopisi parhaiten tiistai-iltapäivä. Onko silloin mahdollista tulla katsomaan asuntoa?
+        </div>
+      </div>
+
+      <div class="dialogue-turn">
+        <p class="speaker-other">Mies: Kyllä, tiistaina kello neljä onnistuu.</p>
+        <p class="speaker-you">Sinä (10 sek): Vahvista aika ja lopeta puhelu.</p>
+        <div class="model-answer">
+          <strong class="label">Mallivastaus:</strong> Hyvä, tulen tiistaina kello neljä. Kiitos paljon tiedoista. Nähdään silloin, kuulemiin!
+        </div>
+        <p class="speaker-other">Mies: Kiitos soitosta. Kuulemiin!</p>
+      </div>
+
+      <h3 id="doc4-sec3">3. Keskustelu: valokuvauskurssista kysyminen</h3>
+      <p><strong>Tehtävä:</strong> Olet nähnyt ilmoituksen paikallisesta valokuvauskurssista ja soitat kurssin järjestäjälle. Kysy kurssista ja kerro, miksi olet kiinnostunut siitä.</p>
+      <p><strong>Huomio:</strong> Sinä aloitat puhumisen heti äänimerkin jälkeen.</p>
+      <h4>Puhelu</h4>
+
+      <div class="dialogue-turn">
+        <p class="speaker-you">Sinä (10 sek): Vastaa puhelimeen.</p>
+        <div class="model-answer">
+          <strong class="label">Mallivastaus:</strong> Haloo, tässä puhuu Markus.
+        </div>
+      </div>
+
+      <div class="dialogue-turn">
+        <p class="speaker-other">Nainen: Hei, valokuvauskurssin järjestäjä tässä. Jätit meille viestin kurssista.</p>
+        <p class="speaker-you">Sinä (20 sek): Vastaa ja kerro, miksi olet kiinnostunut kurssista.</p>
+        <div class="model-answer">
+          <strong class="label">Mallivastaus:</strong> Hei, kiitos soitosta. Olen kiinnostunut kurssista, koska otan paljon valokuvia puhelimellani, mutta haluaisin oppia käyttämään oikeaa kameraa. Haluaisin myös oppia ottamaan parempia kuvia luonnosta ja ihmisistä.
+        </div>
+      </div>
+
+      <div class="dialogue-turn">
+        <p class="speaker-other">Nainen: Kurssi sopii sekä aloittelijoille että jonkin verran kuvanneille. Millainen kamera sinulla on?</p>
+        <p class="speaker-you">Sinä (20 sek): Kerro kamerastasi ja kysy, tarvitseeko kurssilla oman kameran.</p>
+        <div class="model-answer">
+          <strong class="label">Mallivastaus:</strong> Minulla on digitaalinen kamera, mutta en ole käyttänyt sitä kovin paljon. Onko oman kameran tuominen välttämätöntä? Voiko kurssille osallistua myös puhelimen kameralla?
+        </div>
+      </div>
+
+      <div class="dialogue-turn">
+        <p class="speaker-other">Nainen: Oma kamera olisi hyvä ottaa mukaan, mutta ensimmäisellä kerralla voimme lainata kameraa tarvittaessa.</p>
+        <p class="speaker-you">Sinä (20 sek): Vastaa ja kysy, mitä kurssilla opiskellaan.</p>
+        <div class="model-answer">
+          <strong class="label">Mallivastaus:</strong> Hyvä, otan oman kamerani mukaan. Haluaisin tietää, mitä kurssilla tarkalleen harjoitellaan. Opiskellaanko esimerkiksi valaistusta, kuvien sommittelua ja kameran asetuksia?
+        </div>
+      </div>
+
+      <div class="dialogue-turn">
+        <p class="speaker-other">Nainen: Kyllä, kurssilla harjoitellaan kaikkia näitä asioita. Tapaamisia on kuusi, ja ne ovat keskiviikkoiltaisin.</p>
+        <p class="speaker-you">Sinä (20 sek): Kysy kurssin ajankohdasta ja kestosta.</p>
+        <div class="model-answer">
+          <strong class="label">Mallivastaus:</strong> Mihin aikaan keskiviikon tapaamiset alkavat ja kuinka kauan ne kestävät? Haluaisin varmistaa, että ehdin paikalle töiden jälkeen.
+        </div>
+      </div>
+
+      <div class="dialogue-turn">
+        <p class="speaker-other">Nainen: Kurssi alkaa kello kuusi ja kestää kaksi tuntia.</p>
+        <p class="speaker-you">Sinä (10 sek): Kysy kurssin hintaa.</p>
+        <div class="model-answer">
+          <strong class="label">Mallivastaus:</strong> Kiitos tiedosta. Paljonko koko kurssi maksaa?
+        </div>
+      </div>
+
+      <div class="dialogue-turn">
+        <p class="speaker-other">Nainen: Kurssimaksu on 110 euroa.</p>
+        <p class="speaker-you">Sinä (10 sek): Lopeta puhelu.</p>
+        <div class="model-answer">
+          <strong class="label">Mallivastaus:</strong> Selvä, kiitos paljon. Tarkistan työaikatauluni ja ilmoittaudun verkkosivujenne kautta. Hyvää päivänjatkoa, hei hei!
+        </div>
+        <p class="speaker-other">Nainen: Kiitos, hei hei!</p>
+      </div>
+
+      <h3 id="doc4-sec4">4. Tilanteet</h3>
+      <p>Kuulet tilanteen numeron ja saat 20 sekuntia aikaa tutustua tehtävään. Kun kuulet “Puhu nyt”, sano pyydetyt asiat suomeksi.</p>
+
+      <h4>Tilanne 1: Viikonlopun suunnitelmat</h4>
+      <div class="meta-bar"><span>Vastausaika: 20 sekuntia</span></div>
+      <p>Työkaverisi kysyy, mitä aiot tehdä viikonloppuna. Kerro suunnitelmistasi.</p>
+      <div class="model-answer">
+        <strong class="label">Mallivastaus:</strong> Ajattelin käydä viikonloppuna kaupassa ja tehdä kotona vähän siivousta. Lauantaina tapaan ystäväni kahvilassa, ja ehkä käymme sen jälkeen kävelyllä. Sunnuntaina haluan levätä ja valmistaa ruokaa seuraavalle viikolle.
+      </div>
+
+      <h4>Tilanne 2: Tiedustelu uimahallista</h4>
+      <div class="meta-bar"><span>Vastausaika: 30 sekuntia</span></div>
+      <p>Soitat uimahalliin ja kysyt aukioloajoista, uimalippujen hinnasta ja siitä, pitääkö oma pyyhe ottaa mukaan.</p>
+      <div class="model-answer">
+        <strong class="label">Mallivastaus:</strong> Hyvää päivää. Haluaisin kysyä uimahallinne palveluista. Mihin aikaan olette avoinna lauantaina? Paljonko aikuisten kertalippu maksaa, ja saako lipun ostettua paikan päältä? Haluaisin myös tietää, pitääkö oma pyyhe ottaa mukaan vai voiko pyyhkeen vuokrata teiltä.
+      </div>
+
+      <h4>Tilanne 3: Työvuoron vaihtaminen</h4>
+      <div class="meta-bar"><span>Vastausaika: 30 sekuntia</span></div>
+      <p>Puhut esihenkilösi kanssa. Kerro, ettet pääse tulemaan sovittuun työvuoroon perjantaina, ja kysy, voisiko vuoron vaihtaa.</p>
+      <div class="model-answer">
+        <strong class="label">Mallivastaus:</strong> Hei, haluaisin puhua perjantain työvuorostani. Minulle on tullut tärkeä meno, enkä valitettavasti pääse silloin töihin. Olisiko mahdollista vaihtaa vuoro toiseen päivään? Voin työskennellä esimerkiksi lauantaina tai ensi viikon tiistaina. Pahoittelen, että kysyn tästä näin myöhään.
+      </div>
+
+      <h4>Tilanne 4: Ohjeiden pyytäminen postissa</h4>
+      <div class="meta-bar"><span>Vastausaika: 30 sekuntia</span></div>
+      <p>Olet postissa lähettämässä pakettia ulkomaille. Kerro, minne paketti menee, ja kysy lähetyksen hinnasta ja arvioidusta toimitusajasta.</p>
+      <div class="model-answer">
+        <strong class="label">Mallivastaus:</strong> Hei. Haluaisin lähettää tämän paketin Ruotsiin. Voisitteko kertoa, paljonko lähetys maksaa ja kuinka kauan sen toimittaminen yleensä kestää? Tarvitsenko pakettiin jonkin erityisen lomakkeen tai tullitiedot? Haluaisin myös seurata paketin matkaa, jos se on mahdollista.
+      </div>
+
+      <h4>Tilanne 5: Hotellihuoneen ongelma</h4>
+      <div class="meta-bar"><span>Vastausaika: 30 sekuntia</span></div>
+      <p>Olet hotellissa ja huomaat, ettei huoneen lämmitys toimi. Kerro asiasta vastaanotossa ja pyydä apua.</p>
+      <div class="model-answer">
+        <strong class="label">Mallivastaus:</strong> Anteeksi, voisitteko auttaa minua? Huoneeni lämmitys ei näytä toimivan, ja huoneessa on aika kylmä. Olen yrittänyt säätää termostaattia, mutta lämpötila ei ole muuttunut. Voisiko joku tulla tarkistamaan lämmityksen? Jos sitä ei saada korjattua, olisiko mahdollista vaihtaa toiseen huoneeseen?
+      </div>
+
+      <h3 id="doc4-sec5">5. Mielipide</h3>
+      <p>Valitse joko A tai B. Sinulla on 2 minuuttia aikaa puhua. Perustele mielipiteesi ja yritä puhua koko vastausaika.</p>
+
+      <h4>A) Verkko-ostaminen ja tavalliset kaupat</h4>
+      <p>Kerro esimerkiksi:</p>
+      <ul>
+        <li>Mitä ihmiset ostavat yleensä verkosta?</li>
+        <li>Mitä hyviä ja huonoja puolia verkko-ostamisessa on?</li>
+        <li>Miksi jotkut haluavat käydä tavallisissa kaupoissa?</li>
+        <li>Miten verkko-ostaminen vaikuttaa paikallisiin kauppoihin?</li>
+        <li>Kummasta sinä pidät enemmän ja miksi?</li>
+      </ul>
+      <div class="model-answer">
+        <strong class="label">Mallivastaus:</strong>
+        <p>Ihmiset ostavat verkosta nykyään monenlaisia asioita, kuten vaatteita, kirjoja, kodin tarvikkeita ja elektroniikkaa. Verkosta voi myös tilata ruokaa tai varata matkoja. Yksi verkko-ostamisen hyvä puoli on se, että tuotteita voi vertailla rauhassa kotona. Kauppaan ei tarvitse matkustaa, ja valikoima voi olla suurempi kuin lähialueen kaupoissa.</p>
+        <p>Verkossa ostamisessa on kuitenkin myös huonoja puolia. Tuotetta ei voi nähdä tai kokeilla ennen ostamista, joten se ei aina vastaa odotuksia. Vaatteissa koko voi olla väärä, ja palauttaminen voi viedä aikaa. Toimituksessa voi myös kestää useita päiviä.</p>
+        <p>Tavallisissa kaupoissa voi nähdä tuotteen heti ja kysyä neuvoa myyjältä. Kaupassa käynti voi olla myös mukavaa tekemistä, varsinkin jos samalla tapaa muita ihmisiä tai käy kahvilassa. Toisaalta kauppaan meneminen vie aikaa, ja kaikkia tuotteita ei välttämättä löydy sieltä.</p>
+        <p>Verkko-ostaminen voi olla vaikeaa pienille paikallisille kaupoille, koska ne joutuvat kilpailemaan suurten yritysten kanssa. Minusta paikallisia kauppoja kannattaa tukea silloin, kun se on mahdollista. Ne tarjoavat usein henkilökohtaista palvelua ja pitävät keskustan elävänä.</p>
+        <p>Itse ostan osan tavaroista verkosta ja osan tavallisista kaupoista. Jos tiedän tarkasti, mitä tarvitsen, verkkokauppa on kätevä. Jos taas haluan tarkistaa tuotteen laadun tai saada neuvoja, menen mieluummin kauppaan.</p>
+      </div>
+
+      <h4>B) Lemmikkieläimet ja vastuu</h4>
+      <p>Kerro esimerkiksi:</p>
+      <ul>
+        <li>Miksi ihmiset hankkivat lemmikkieläimiä?</li>
+        <li>Millaisia hyviä puolia lemmikistä on?</li>
+        <li>Mitä vastuuta lemmikin omistaminen tuo?</li>
+        <li>Sopivatko lemmikit mielestäsi kaikkiin koteihin?</li>
+        <li>Mitä pitäisi miettiä ennen lemmikin hankkimista?</li>
+      </ul>
+      <div class="model-answer">
+        <strong class="label">Mallivastaus:</strong>
+        <p>Monet ihmiset hankkivat lemmikin, koska he pitävät eläimistä ja haluavat niistä seuraa. Lemmikki voi tuoda iloa arkeen, ja esimerkiksi koiran kanssa täytyy käydä ulkona joka päivä. Tämä voi auttaa omistajaa liikkumaan enemmän.</p>
+        <p>Lemmikin omistaminen tuo kuitenkin paljon vastuuta. Eläimelle pitää antaa ruokaa, vettä, liikuntaa ja turvallinen koti. Lemmikki tarvitsee myös huolenpitoa, kun se sairastuu. Eläimen pitäminen maksaa rahaa, sillä ruokaan, tarvikkeisiin ja eläinlääkärikäynteihin voi kulua paljon.</p>
+        <p>Minusta lemmikki ei sovi kaikkiin koteihin tai elämäntilanteisiin. Jos ihminen tekee paljon pitkiä työpäiviä eikä pysty huolehtimaan eläimestä, lemmikin hankkiminen ei ehkä ole hyvä ratkaisu. Myös asunnon koko ja taloyhtiön säännöt pitää ottaa huomioon.</p>
+        <p>Ennen lemmikin hankkimista pitäisi miettiä, kuka hoitaa eläintä lomien aikana ja mitä tapahtuu, jos omistaja muuttaa tai elämäntilanne muuttuu. Lemmikki ei ole tavara, josta voi luopua heti, jos sen hoitaminen tuntuu vaikealta. Päätöstä ei kannata tehdä hetken mielijohteesta.</p>
+        <p>Lemmikki voi olla tärkeä perheenjäsen ja tuoda paljon hyvää elämään. Omistajan pitää kuitenkin olla valmis huolehtimaan siitä koko sen elämän ajan. Siksi lemmikin hankkimista kannattaa suunnitella huolellisesti.</p>
+      </div>
+
+      <h3 id="doc4-sec6">Aikataulut yhteenvetona</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Tehtävä</th>
+            <th>Valmistautumis- tai tutustumisaika</th>
+            <th>Vastausaika</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Kertominen</td>
+            <td>1 min</td>
+            <td>1 min 30 s</td>
+          </tr>
+          <tr>
+            <td>Asunnon etsiminen</td>
+            <td>Ohjeessa ei ilmoitettu</td>
+            <td>20 s, 20 s, 10 s, 15 s, 20 s, 10 s ja 10 s</td>
+          </tr>
+          <tr>
+            <td>Valokuvauskurssista kysyminen</td>
+            <td>Ohjeessa ei ilmoitettu</td>
+            <td>10 s, 20 s, 20 s, 20 s, 10 s ja 10 s</td>
+          </tr>
+          <tr>
+            <td>Tilanne 1</td>
+            <td>20 s</td>
+            <td>20 s</td>
+          </tr>
+          <tr>
+            <td>Tilanne 2</td>
+            <td>20 s</td>
+            <td>30 s</td>
+          </tr>
+          <tr>
+            <td>Tilanne 3</td>
+            <td>20 s</td>
+            <td>30 s</td>
+          </tr>
+          <tr>
+            <td>Tilanne 4</td>
+            <td>20 s</td>
+            <td>30 s</td>
+          </tr>
+          <tr>
+            <td>Tilanne 5</td>
+            <td>20 s</td>
+            <td>30 s</td>
+          </tr>
+          <tr>
+            <td>Mielipide</td>
+            <td>Ohjeessa ei ilmoitettu</td>
+            <td>2 min</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="tip-box">
+        Harjoittele ajastimen kanssa ja pyri vastaamaan koko annetun ajan. Keskustelutehtävissä reagoi toisen osapuolen puheenvuoroon, ja yksittäisissä tilanteissa käsittele kaikki tehtävänannossa pyydetyt asiat.
+      </div>
+
+      <a href="#top" class="back-to-top">↑ Takaisin ylös (Sisällysluettelo)</a>
+    </section>
+
+    <!-- =====================================================================
+         DOCUMENT 5: YKI-speaking-10.docx
+         ===================================================================== -->
+    <section id="doc-5" class="doc-section">
+      <span class="doc-badge">Tiedosto 5: YKI-speaking-10.docx</span>
+      <h2>130 useful Finnish speaking phrases for YKI B1/B2 practice</h2>
+      <p class="intro-note">These expressions are useful for speaking naturally in everyday situations, discussions and short presentations. They include both neutral spoken Finnish and common conversational forms such as mä (“I”) and mun mielestä (“in my opinion”). You do not need to use slang: choose expressions that feel comfortable and are easy to pronounce.</p>
+
+      <h3 id="doc5-sec1">1. Starting and keeping your turn</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Finnish phrase</th>
+            <th>Meaning / use</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>No niin, aloitetaan.</td><td>All right, let’s start.</td></tr>
+          <tr><td>2</td><td>No, tästä aiheesta…</td><td>Well, about this topic…</td></tr>
+          <tr><td>3</td><td>Ensimmäiseksi tulee mieleen, että…</td><td>The first thing that comes to mind is…</td></tr>
+          <tr><td>4</td><td>Tästä aiheesta on aika paljon sanottavaa.</td><td>There’s quite a lot to say about this topic.</td></tr>
+          <tr><td>5</td><td>Mulla on tästä vähän kokemusta.</td><td>I have some experience with this.</td></tr>
+          <tr><td>6</td><td>En ole aiemmin ajatellut tätä kovin paljon, mutta…</td><td>I haven’t thought about this much before, but…</td></tr>
+          <tr><td>7</td><td>Yritän selittää, mitä tarkoitan.</td><td>I’ll try to explain what I mean.</td></tr>
+          <tr><td>8</td><td>Katsotaanpa…</td><td>Let me think…</td></tr>
+          <tr><td>9</td><td>Miten sen nyt sanoisi…</td><td>How would I put it…</td></tr>
+          <tr><td>10</td><td>Hyvä kysymys.</td><td>Good question.</td></tr>
+          <tr><td>11</td><td>No, sanoisin näin: …</td><td>Well, I’d put it this way: …</td></tr>
+          <tr><td>12</td><td>Yleisesti ottaen…</td><td>Generally speaking…</td></tr>
+          <tr><td>13</td><td>Mun kokemuksen mukaan…</td><td>In my experience…</td></tr>
+          <tr><td>14</td><td>Omasta mielestäni…</td><td>In my opinion…</td></tr>
+          <tr><td>15</td><td>Tähän ei varmaan ole yhtä oikeaa vastausta.</td><td>There probably isn’t one right answer to this.</td></tr>
+          <tr><td>16</td><td>Se riippuu aika paljon tilanteesta.</td><td>It depends quite a lot on the situation.</td></tr>
+          <tr><td>17</td><td>Yksi tärkeä asia on se, että…</td><td>One important thing is that…</td></tr>
+          <tr><td>18</td><td>Tässä on monta puolta.</td><td>There are several sides to this.</td></tr>
+          <tr><td>19</td><td>Voin kertoa siitä esimerkin.</td><td>I can give an example of that.</td></tr>
+          <tr><td>20</td><td>Palaan vielä siihen, mitä sanoit.</td><td>I’ll come back to what you said.</td></tr>
+        </tbody>
+      </table>
+
+      <h3 id="doc5-sec2">2. Giving opinions</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Finnish phrase</th>
+            <th>Meaning / use</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>21</td><td>Mun mielestä…</td><td>In my opinion…</td></tr>
+          <tr><td>22</td><td>Mä ajattelen, että…</td><td>I think that…</td></tr>
+          <tr><td>23</td><td>Mun mielestäni olisi hyvä, jos…</td><td>I think it would be good if…</td></tr>
+          <tr><td>24</td><td>Olen sitä mieltä, että…</td><td>I’m of the opinion that…</td></tr>
+          <tr><td>25</td><td>Jos multa kysytään, niin…</td><td>If you ask me…</td></tr>
+          <tr><td>26</td><td>Sanoisin, että…</td><td>I’d say that…</td></tr>
+          <tr><td>27</td><td>Mä pidän sitä tärkeänä, koska…</td><td>I consider it important because…</td></tr>
+          <tr><td>28</td><td>Mun mielestä tässä on sekä hyviä että huonoja puolia.</td><td>I think there are both advantages and disadvantages.</td></tr>
+          <tr><td>29</td><td>Ymmärrän tämän näkökulman, mutta…</td><td>I understand this point of view, but…</td></tr>
+          <tr><td>30</td><td>Olen samaa mieltä siitä, että…</td><td>I agree that…</td></tr>
+          <tr><td>31</td><td>Olen tästä vähän eri mieltä.</td><td>I see this a little differently.</td></tr>
+          <tr><td>32</td><td>En ole ihan varma, mutta…</td><td>I’m not completely sure, but…</td></tr>
+          <tr><td>33</td><td>Mun on vaikea päättää, kumpi vaihtoehto on parempi.</td><td>It’s hard for me to decide which option is better.</td></tr>
+          <tr><td>34</td><td>Tämä on tietysti vain mun oma mielipide.</td><td>This is, of course, just my own opinion.</td></tr>
+          <tr><td>35</td><td>Mä suhtaudun tähän aika myönteisesti.</td><td>I have a fairly positive attitude towards this.</td></tr>
+          <tr><td>36</td><td>En näe tässä pelkästään huonoja puolia.</td><td>I don’t see only disadvantages in this.</td></tr>
+          <tr><td>37</td><td>En kannata sitä, että…</td><td>I don’t support the idea that…</td></tr>
+          <tr><td>38</td><td>Minusta olisi järkevää…</td><td>I think it would make sense to…</td></tr>
+          <tr><td>39</td><td>Se tuntuu hyvältä ratkaisulta.</td><td>That seems like a good solution.</td></tr>
+          <tr><td>40</td><td>Lopulta jokaisen pitää itse päättää.</td><td>In the end, everyone has to decide for themselves.</td></tr>
+        </tbody>
+      </table>
+
+      <h3 id="doc5-sec3">3. Giving reasons and examples</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Finnish phrase</th>
+            <th>Meaning / use</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>41</td><td>Syy siihen on se, että…</td><td>The reason is that…</td></tr>
+          <tr><td>42</td><td>Tämä johtuu siitä, että…</td><td>This is because…</td></tr>
+          <tr><td>43</td><td>Sen takia, että…</td><td>Because…</td></tr>
+          <tr><td>44</td><td>Yksi syy on varmasti se, että…</td><td>One reason is probably that…</td></tr>
+          <tr><td>45</td><td>Esimerkiksi…</td><td>For example…</td></tr>
+          <tr><td>46</td><td>Vaikka…</td><td>Although…</td></tr>
+          <tr><td>47</td><td>Jos ajatellaan vaikka opiskelijoita…</td><td>If we think of students, for example…</td></tr>
+          <tr><td>48</td><td>Otetaan esimerkiksi tilanne, jossa…</td><td>Let’s take the example of a situation where…</td></tr>
+          <tr><td>49</td><td>Mulla kävi kerran niin, että…</td><td>One time, this happened to me…</td></tr>
+          <tr><td>50</td><td>Huomasin sen erityisesti silloin, kun…</td><td>I noticed it especially when…</td></tr>
+          <tr><td>51</td><td>Se näkyy esimerkiksi siinä, että…</td><td>You can see it, for example, in the fact that…</td></tr>
+          <tr><td>52</td><td>Tästä hyvä esimerkki on…</td><td>A good example of this is…</td></tr>
+          <tr><td>53</td><td>Sen huomaa helposti arjessa.</td><td>You can easily notice it in everyday life.</td></tr>
+          <tr><td>54</td><td>Tämä vaikuttaa myös siihen, että…</td><td>This also affects the fact that…</td></tr>
+          <tr><td>55</td><td>Siksi ajattelen, että…</td><td>That’s why I think that…</td></tr>
+        </tbody>
+      </table>
+
+      <h3 id="doc5-sec4">4. Comparing, balancing and adding nuance</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Finnish phrase</th>
+            <th>Meaning / use</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>56</td><td>Toisaalta…</td><td>On the other hand…</td></tr>
+          <tr><td>57</td><td>Toisaalta taas…</td><td>On the other hand, though…</td></tr>
+          <tr><td>58</td><td>Vaikka siinä on hyviä puolia, siinä on myös haasteita.</td><td>Although it has advantages, it also has challenges.</td></tr>
+          <tr><td>59</td><td>Verrattuna siihen…</td><td>Compared with that…</td></tr>
+          <tr><td>60</td><td>Aiemmin tilanne oli erilainen.</td><td>The situation used to be different.</td></tr>
+          <tr><td>61</td><td>Nykyään moni asia on helpompaa.</td><td>These days, many things are easier.</td></tr>
+          <tr><td>62</td><td>Riippuu siitä, mitä itse arvostaa.</td><td>It depends on what you value.</td></tr>
+          <tr><td>63</td><td>Joillekin se sopii, mutta kaikille ei.</td><td>It suits some people, but not everyone.</td></tr>
+          <tr><td>64</td><td>Se voi olla hyvä vaihtoehto, jos…</td><td>It can be a good option if…</td></tr>
+          <tr><td>65</td><td>En sanoisi, että se toimii aina.</td><td>I wouldn’t say it always works.</td></tr>
+          <tr><td>66</td><td>Siinä on puolensa.</td><td>It has its good sides.</td></tr>
+          <tr><td>67</td><td>Samalla pitää muistaa, että…</td><td>At the same time, we should remember that…</td></tr>
+          <tr><td>68</td><td>Tämä ei kuitenkaan tarkoita sitä, että…</td><td>However, this doesn’t mean that…</td></tr>
+          <tr><td>69</td><td>Se riippuu esimerkiksi iästä ja elämäntilanteesta.</td><td>It depends, for example, on a person’s age and life situation.</td></tr>
+          <tr><td>70</td><td>Kaikki eivät ajattele tästä samalla tavalla.</td><td>Not everyone thinks about this in the same way.</td></tr>
+        </tbody>
+      </table>
+
+      <h3 id="doc5-sec5">5. Telling a story or describing events</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Finnish phrase</th>
+            <th>Meaning / use</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>71</td><td>Se tapahtui muutama vuosi sitten.</td><td>It happened a few years ago.</td></tr>
+          <tr><td>72</td><td>Aluksi en ollut ihan varma, mitä tehdä.</td><td>At first, I wasn’t quite sure what to do.</td></tr>
+          <tr><td>73</td><td>Sitten päätin, että…</td><td>Then I decided that…</td></tr>
+          <tr><td>74</td><td>Sen jälkeen…</td><td>After that…</td></tr>
+          <tr><td>75</td><td>Lopulta kaikki meni hyvin.</td><td>In the end, everything went well.</td></tr>
+          <tr><td>76</td><td>Ensin ajattelin, että…, mutta sitten…</td><td>At first I thought that…, but then…</td></tr>
+          <tr><td>77</td><td>Muistan erityisesti sen, että…</td><td>I especially remember that…</td></tr>
+          <tr><td>78</td><td>Päivän aikana tapahtui monta asiaa.</td><td>A lot happened during the day.</td></tr>
+          <tr><td>79</td><td>Yllättäen…</td><td>Unexpectedly…</td></tr>
+          <tr><td>80</td><td>Onneksi…</td><td>Fortunately…</td></tr>
+          <tr><td>81</td><td>Valitettavasti…</td><td>Unfortunately…</td></tr>
+          <tr><td>82</td><td>Siitä jäi hyvä muisto.</td><td>It left me with a good memory.</td></tr>
+          <tr><td>83</td><td>Opin siitä, että…</td><td>I learned from it that…</td></tr>
+          <tr><td>84</td><td>Jälkeenpäin ajateltuna…</td><td>Looking back…</td></tr>
+          <tr><td>85</td><td>Se oli erilainen kokemus kuin olin odottanut.</td><td>It was a different experience from what I expected.</td></tr>
+        </tbody>
+      </table>
+
+      <h3 id="doc5-sec6">6. Responding and managing a conversation</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Finnish phrase</th>
+            <th>Meaning / use</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>86</td><td>Aivan, ymmärrän.</td><td>Right, I understand.</td></tr>
+          <tr><td>87</td><td>Niin, se on totta.</td><td>Yes, that’s true.</td></tr>
+          <tr><td>88</td><td>Hyvä kun mainitsit sen.</td><td>Good that you mentioned that.</td></tr>
+          <tr><td>89</td><td>En tullut ajatelleeksi tuota.</td><td>I hadn’t thought of that.</td></tr>
+          <tr><td>90</td><td>Voisitko selittää sitä vähän tarkemmin?</td><td>Could you explain that a little more?</td></tr>
+          <tr><td>91</td><td>Mitä tarkoitat sillä?</td><td>What do you mean by that?</td></tr>
+          <tr><td>92</td><td>Voisitko toistaa, kiitos?</td><td>Could you repeat that, please?</td></tr>
+          <tr><td>93</td><td>Anteeksi, en kuullut ihan kunnolla.</td><td>Sorry, I didn’t quite hear that.</td></tr>
+          <tr><td>94</td><td>Tarkoitin sitä, että…</td><td>What I meant was that…</td></tr>
+          <tr><td>95</td><td>Sanon sen toisella tavalla.</td><td>I’ll put it another way.</td></tr>
+          <tr><td>96</td><td>En muista tarkkaa sanaa, mutta…</td><td>I can’t remember the exact word, but…</td></tr>
+          <tr><td>97</td><td>En osaa sanoa varmasti.</td><td>I can’t say for sure.</td></tr>
+          <tr><td>98</td><td>Se riippuu siitä, mitä vaihtoehtoja on.</td><td>It depends on what the options are.</td></tr>
+          <tr><td>99</td><td>Se kuulostaa hyvältä.</td><td>That sounds good.</td></tr>
+          <tr><td>100</td><td>Se sopii mulle hyvin.</td><td>That works well for me.</td></tr>
+        </tbody>
+      </table>
+
+      <h3 id="doc5-sec7">7. Useful phrases for everyday situations</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Finnish phrase</th>
+            <th>Meaning / use</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>101</td><td>Haluaisin kysyä yhdestä asiasta.</td><td>I’d like to ask about something.</td></tr>
+          <tr><td>102</td><td>Voisitteko auttaa minua?</td><td>Could you help me?</td></tr>
+          <tr><td>103</td><td>Haluaisin varata ajan.</td><td>I’d like to make an appointment.</td></tr>
+          <tr><td>104</td><td>Onko teillä vapaita aikoja ensi viikolla?</td><td>Do you have any available appointments next week?</td></tr>
+          <tr><td>105</td><td>Sopisiko teille, jos tulisin vähän myöhemmin?</td><td>Would it suit you if I came a little later?</td></tr>
+          <tr><td>106</td><td>Minulle sopisi parhaiten…</td><td>The most suitable time for me would be…</td></tr>
+          <tr><td>107</td><td>Voisitteko kertoa, paljonko se maksaa?</td><td>Could you tell me how much it costs?</td></tr>
+          <tr><td>108</td><td>Haluaisin tietää, miten tämä toimii.</td><td>I’d like to know how this works.</td></tr>
+          <tr><td>109</td><td>Minulla on pieni ongelma.</td><td>I have a small problem.</td></tr>
+          <tr><td>110</td><td>Taitaa olla niin, että…</td><td>It seems that…</td></tr>
+          <tr><td>111</td><td>Luulen, että tässä on tapahtunut virhe.</td><td>I think there’s been a mistake here.</td></tr>
+          <tr><td>112</td><td>Voisitteko tarkistaa asian?</td><td>Could you check that?</td></tr>
+          <tr><td>113</td><td>Olen pahoillani, että myöhästyn.</td><td>I’m sorry I’m going to be late.</td></tr>
+          <tr><td>114</td><td>Kiitos, kun ilmoitit.</td><td>Thanks for letting me know.</td></tr>
+          <tr><td>115</td><td>Palataan asiaan myöhemmin.</td><td>Let’s come back to this later.</td></tr>
+        </tbody>
+      </table>
+
+      <h3 id="doc5-sec8">8. Common sayings and idiomatic expressions</h3>
+      <p>Use these when they fit naturally; you don’t need to include a proverb just to sound fluent.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Finnish phrase</th>
+            <th>Meaning / use</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>116</td><td>Harjoitus tekee mestarin.</td><td>Practice makes perfect.</td></tr>
+          <tr><td>117</td><td>Hiljaa hyvä tulee.</td><td>Good things take time; don’t rush.</td></tr>
+          <tr><td>118</td><td>Parempi myöhään kuin ei milloinkaan.</td><td>Better late than never.</td></tr>
+          <tr><td>119</td><td>Ei savua ilman tulta.</td><td>There’s no smoke without fire.</td></tr>
+          <tr><td>120</td><td>Vahinko ei tule kello kaulassa.</td><td>Accidents happen unexpectedly.</td></tr>
+          <tr><td>121</td><td>Ei kaikkea voi saada kerralla.</td><td>You can’t have everything at once.</td></tr>
+          <tr><td>122</td><td>Aika näyttää.</td><td>Time will tell.</td></tr>
+          <tr><td>123</td><td>Minkä taakseen jättää, sen edestään löytää.</td><td>What you leave undone may come back to you.</td></tr>
+          <tr><td>124</td><td>Yksi asia kerrallaan.</td><td>One thing at a time.</td></tr>
+          <tr><td>125</td><td>Ei kannata tehdä kärpäsestä härkästä.</td><td>Don’t make a mountain out of a molehill.</td></tr>
+          <tr><td>126</td><td>Olla samalla aaltopituudella.</td><td>To be on the same wavelength.</td></tr>
+          <tr><td>127</td><td>Mennä omalla painollaan.</td><td>To unfold naturally, without forcing it.</td></tr>
+          <tr><td>128</td><td>Otta rauhallisesti.</td><td>To take it easy.</td></tr>
+          <tr><td>129</td><td>Tehdä parhaansa.</td><td>To do one’s best.</td></tr>
+          <tr><td>130</td><td>Oppia kantapään kautta.</td><td>To learn the hard way.</td></tr>
+        </tbody>
+      </table>
+
+      <h3 id="doc5-sec9">Quick practice tip</h3>
+      <div class="tip-box">
+        <p>For a longer YKI answer, combine a few phrases in this order:</p>
+        <p><strong>Mun mielestä… + syy + esimerkki + toinen näkökulma + lopetus</strong></p>
+        <p>For example:</p>
+        <p><em>Mun mielestä julkinen liikenne on tärkeää, koska kaikilla ei ole autoa. Esimerkiksi opiskelijat käyttävät usein busseja päivittäin. Toisaalta bussit eivät aina kulje sopivaan aikaan. Siksi vuoroja olisi hyvä lisätä etenkin iltaisin.</em></p>
+      </div>
+
+      <a href="#top" class="back-to-top">↑ Takaisin ylös (Sisällysluettelo)</a>
+    </section>
+  </div>
+</body>
+</html>

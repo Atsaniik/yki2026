@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YKI B2 -kattava opetusmateriaali ja dokumenttikokoelma</title>
+    <style>
+        :root {
+            --primary-color: #2b6cb0;
+            --secondary-color: #2d3748;
+            --bg-color: #f7fafc;
+            --card-bg: #ffffff;
+            --text-color: #2d3748;
+            --border-color: #e2e8f0;
+            --accent-color: #319795;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        header {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        h1 {
+            color: var(--primary-color);
+            margin-top: 0;
+            font-size: 2.2em;
+        }
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 10px;
+            margin-top: 50px;
+            font-size: 1.6em;
+        }
+        h3 {
+            color: var(--secondary-color);
+            margin-top: 30px;
+            font-size: 1.25em;
+        }
+        h4 {
+            color: var(--accent-color);
+            margin-top: 20px;
+            font-size: 1.1em;
+        }
+        section {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+        nav.toc {
+            background: #ebf8ff;
+            border-left: 5px solid var(--primary-color);
+            padding: 25px 30px;
+            border-radius: 6px;
+            margin-bottom: 30px;
+        }
+        nav.toc h2 {
+            margin-top: 0;
+            border-bottom: none;
+            padding-bottom: 0;
+            font-size: 1.4em;
+        }
+        nav.toc ul {
+            margin: 15px 0 0 0;
+            padding-left: 20px;
+        }
+        nav.toc li {
+            margin-bottom: 10px;
+        }
+        nav.toc a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        nav.toc a:hover {
+            text-decoration: underline;
+        }
+        p {
+            margin-bottom: 16px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 0.95em;
+        }
+        th, td {
+            padding: 12px 15px;
+            border: 1px solid var(--border-color);
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background-color: #edf2f7;
+            font-weight: 600;
+            color: var(--secondary-color);
+        }
+        tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+        .message-box {
+            background: #fff;
+            border: 1px solid var(--border-color);
+            border-left: 4px solid var(--accent-color);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .proverb-box {
+            background: #fffaf0;
+            border: 1px solid #feebc8;
+            border-left: 4px solid #dd6b20;
+            padding: 15px 20px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>YKI B2 -valmennusmateriaali ja dokumenttikokoelma</h1>
+            <p>Kattava ja jäsennetty kokoelma suomen kielen B2-tason opetusmateriaaleja: mielipidetekstejä, muodollisia ja epämuodollisia viestejä, sanastoja sekä sananlaskuja.</p>
+        </header>
+
+        <nav class="toc" id="toc">
+            <h2>Sisällysluettelo</h2>
+            <ul>
+                <li><a href="#section-mieli">1. Mielipidetekstit ja esseet (YKI-testi_mieli.docx)</a></li>
+                <li><a href="#section-offical">2. Muodolliset viestit ja virallinen sanasto (YKI-testi_offical.docx)</a></li>
+                <li><a href="#section-unoffical">3. Epämuodolliset viestit ja arkisanasto (YKI-testi_unoffical.docx)</a></li>
+            </ul>
+        </nav>
+
+        <!-- SECTION 1: MIELIPIDETEKSTIT JA ESSEET -->
+        <section id="section-mieli">
+            <h2>1. Mielipidetekstit ja esseet</h2>
+
+            <h3>Etätyön hyvät ja huonot puolet</h3>
+            <p>Etätyöstä on tullut viime vuosina yhä yleisempää. Monet ihmiset tekevät nykyään töitä kotona ainakin muutamana päivänä viikossa. Mielestäni etätyö on hyvä vaihtoehto, mutta se ei sovi kaikille.</p>
+            <p>Yksi etätyön suurimmista eduista on joustavuus. Työntekijä voi säästää aikaa, koska hänen ei tarvitse matkustaa päivittäin työpaikalle. Lisäksi kotona työskentely voi auttaa keskittymään paremmin, jos ympäristö on rauhallinen.</p>
+            <p>Toisaalta etätyössä on myös haasteita. Kaikki eivät pysty erottamaan työaikaa vapaa-ajasta. Lisäksi työkavereiden tapaaminen kasvotusten voi vähentyä, mikä saattaa aiheuttaa yksinäisyyttä.</p>
+            <p>Mielestäni paras ratkaisu olisi yhdistää etätyö ja toimistotyö. Näin työntekijät voisivat nauttia molempien vaihtoehtojen hyvistä puolista.</p>
+
+            <h3>Ilmainen julkinen liikenne hyödyttäisi kaikkia</h3>
+            <p>Julkinen liikenne on tärkeä osa ihmisten jokapäiväistä elämää. Monissa kaupungeissa bussien ja junien käyttäminen maksaa kuitenkin melko paljon. Mielestäni julkisen liikenteen pitäisi olla ainakin osittain ilmaista.</p>
+            <p>Ensinnäkin ilmainen joukkoliikenne kannustaisi ihmisiä jättämään oman auton kotiin. Tämä vähentäisi liikenteen päästöjä ja parantaisi ilmanlaatua. Lisäksi kaupunkien ruuhkat voisivat vähentyä huomattavasti.</p>
+            <p>Toiseksi maksuton liikenne helpottaisi erityisesti opiskelijoiden, eläkeläisten ja pienituloisten ihmisten arkea. Kaikilla ei ole varaa käyttää omaa autoa tai maksaa kalliita matkalippuja.</p>
+            <p>On kuitenkin tärkeää huomioida, että julkisen liikenteen ylläpito maksaa paljon. Siksi palveluiden rahoitus pitäisi suunnitella huolellisesti.</p>
+            <p>Kaiken kaikkiaan uskon, että edullisempi tai ilmainen joukkoliikenne olisi hyvä investointi yhteiskunnan tulevaisuuteen.</p>
+
+            <h3>Sosiaalisen median vaikutus hyvinvointiin</h3>
+            <p>Sosiaalisesta mediasta on tullut tärkeä osa monien ihmisten elämää. Käytämme sitä yhteydenpitoon, uutisten seuraamiseen ja viihteen etsimiseen. Mielestäni sosiaalisella medialla on sekä myönteisiä että kielteisiä vaikutuksia hyvinvointiin.</p>
+            <p>Sen suurin etu on, että ihmiset voivat pitää yhteyttä ystäviinsä ja perheenjäseniinsä myös pitkien välimatkojen päästä. Lisäksi sosiaalinen media tarjoaa mahdollisuuden oppia uusia asioita ja löytää samanhenkisiä ihmisiä.</p>
+            <p>Toisaalta jatkuva sosiaalisen median käyttö voi aiheuttaa stressiä ja heikentää itsetuntoa. Ihmiset vertaavat helposti omaa elämäänsä muiden julkaisemiin kuviin, jotka eivät aina vastaa todellisuutta. Tämä voi lisätä tyytymättömyyttä omaan elämään.</p>
+            <p>Mielestäni sosiaalista mediaa kannattaa käyttää kohtuudella. Jokaisen olisi hyvä pitää välillä taukoja ja keskittyä myös oikean elämän ihmissuhteisiin.</p>
+
+            <h3>Terveelliset elämäntavat ja oma vastuu</h3>
+            <p>Terveydestä ja hyvinvoinnista puhutaan nykyään paljon. Ihmiset tietävät yhä paremmin, kuinka tärkeää liikunta, terveellinen ruokavalio ja riittävä uni ovat. Mielestäni jokaisella on vastuu omasta terveydestään, mutta myös yhteiskunnan pitäisi tukea terveellisiä elämäntapoja.</p>
+            <p>Ensinnäkin jokainen voi vaikuttaa hyvinvointiinsa pienillä päivittäisillä valinnoilla. Esimerkiksi kävely, kotona valmistettu ruoka ja säännöllinen unirytmi voivat parantaa terveyttä pitkällä aikavälillä.</p>
+            <p>Toisaalta kaikilla ei ole samanlaisia mahdollisuuksia huolehtia terveydestään. Kiireinen työ, taloudelliset vaikeudet tai sairaudet voivat tehdä terveellisistä valinnoista haastavia.</p>
+            <p>Siksi yhteiskunnan pitäisi tarjota edullisia liikuntapalveluja ja helposti saatavilla olevaa terveysneuvontaa.</p>
+            <p>Yhteenvetona voidaan todeta, että terveydestä huolehtiminen on yhteinen asia. Jokaisen omilla valinnoilla on merkitystä, mutta ympäristön pitäisi tehdä terveellisistä valinnoista mahdollisimman helppoja.</p>
+
+            <h3>Lasten puhelimen käyttö pitäisi pitää kohtuullisena</h3>
+            <p>Älypuhelimet ovat nykyään osa myös lasten jokapäiväistä elämää. Niiden avulla lapset voivat pelata pelejä, katsoa videoita ja pitää yhteyttä kavereihinsa. Mielestäni lasten puhelimen käyttöä pitäisi kuitenkin rajoittaa.</p>
+            <p>Ensinnäkin liian pitkä ruutuaika voi vaikuttaa kielteisesti lasten uneen ja keskittymiskykyyn. Jos lapsi viettää suurimman osan vapaa-ajastaan puhelimen parissa, liikunta ja ulkona leikkiminen saattavat jäädä vähemmälle.</p>
+            <p>Lisäksi internetissä voi olla sisältöä, joka ei sovi lapsille. Vanhempien olisi siksi tärkeää seurata, millaisia palveluja lapset käyttävät.</p>
+            <p>Toisaalta puhelimista on myös hyötyä. Niiden avulla lapset voivat oppia uusia asioita ja ottaa yhteyttä vanhempiinsa tarvittaessa.</p>
+            <p>Mielestäni puhelimia ei tarvitse kieltää kokonaan, mutta niiden käyttöön pitäisi asettaa selkeät rajat. Tärkeintä on löytää tasapaino digitaalisen ja tavallisen arjen välillä.</p>
+
+            <h3>Suomessa asumisen hyvät ja huonot puolet</h3>
+            <p>Monet ihmiset haaveilevat ulkomailla asumisesta, kun taas toiset haluavat rakentaa elämänsä Suomessa. Mielestäni Suomessa asumisessa on paljon hyviä puolia, vaikka ulkomailla asuminen voi tarjota kiinnostavia kokemuksia.</p>
+            <p>Yksi Suomen suurimmista eduista on turvallisuus. Suomessa ihmisillä on yleensä hyvät mahdollisuudet saada koulutusta ja terveydenhuoltoa. Lisäksi luonto on lähellä, ja monissa paikoissa on rauhallinen elinympäristö.</p>
+            <p>Toisaalta Suomen pitkä talvi ja kylmä sää voivat tuntua vaikeilta erityisesti niistä ihmisistä, jotka ovat muuttaneet tänne lämpimämmistä maista. Myös kieli voi aluksi aiheuttaa haasteita.</p>
+            <p>Ulkomailla asuminen puolestaan antaa mahdollisuuden tutustua uusiin kulttuureihin ja oppia kieliä. Samalla se voi kuitenkin olla haastavaa, koska perhe ja ystävät saattavat asua kaukana.</p>
+            <p>Loppujen lopuksi uskon, että hyvä asuinpaikka riippuu ihmisen omista tarpeista ja elämäntilanteesta.</p>
+
+            <h3>Vieraiden kielten osaaminen on tärkeää</h3>
+            <p>Nykymaailmassa ihmiset matkustavat, opiskelevat ja työskentelevät yhä enemmän eri maiden välillä. Siksi vieraiden kielten osaaminen on mielestäni erittäin tärkeää.</p>
+            <p>Ensinnäkin kielitaito helpottaa yhteydenpitoa muiden ihmisten kanssa. Kun osaa vieraita kieliä, voi tutustua uusiin ihmisiin ja ymmärtää paremmin erilaisia kulttuureja.</p>
+            <p>Toiseksi kielitaidosta on hyötyä työelämässä. Monet työnantajat arvostavat työntekijöitä, jotka pystyvät kommunikoimaan kansainvälisten asiakkaiden ja yhteistyökumppaneiden kanssa.</p>
+            <p>On kuitenkin ymmärrettävää, että kaikkien ei ole helppoa oppia uusia kieliä. Opiskelu vaatii aikaa, kärsivällisyyttä ja säännöllistä harjoittelua.</p>
+            <p>Mielestäni jokaiselle pitäisi tarjota mahdollisuus opiskella vieraita kieliä jo koulussa. Kielitaito ei ainoastaan paranna työmahdollisuuksia, vaan myös avartaa maailmankuvaa.</p>
+
+            <h3>Verkko-ostamisen suosio kasvaa</h3>
+            <p>Verkko-ostaminen on yleistynyt huomattavasti viime vuosina. Nykyään lähes kaikkea voi tilata internetistä kotiin. Mielestäni verkko-ostaminen on kätevää, mutta tavallisilla kaupoilla on edelleen tärkeä rooli.</p>
+            <p>Verkko-ostamisen suurin etu on helppous. Tuotteita voi vertailla rauhassa kotona, eikä kauppoihin tarvitse matkustaa. Lisäksi internetistä voi löytää tuotteita, joita ei ole saatavilla lähialueen liikkeissä.</p>
+            <p>Toisaalta verkko-ostamiseen liittyy myös ongelmia. Tuotteen laatua tai sopivuutta ei voi aina arvioida ennen ostamista. Joskus toimitus viivästyy tai tuote ei vastaa odotuksia.</p>
+            <p>Tavallisissa kaupoissa asiakas voi puolestaan kokeilla tuotteita ja saada henkilökohtaista palvelua. Samalla paikallisten yritysten tukeminen auttaa ylläpitämään työpaikkoja.</p>
+            <p>Mielestäni molemmilla ostotavoilla on omat etunsa. Tärkeintä on tehdä harkittuja ostopäätöksiä ja välttää turhaa kuluttamista.</p>
+
+            <h3>Vapaaehtoistyö auttaa sekä muita että itseä</h3>
+            <p>Vapaaehtoistyö on tärkeä tapa auttaa muita ihmisiä ja osallistua yhteiskunnan toimintaan. Monet järjestöt tarvitsevat vapaaehtoisia, mutta kaikki eivät kuitenkaan löydä aikaa tällaiseen toimintaan. Mielestäni vapaaehtoistyötä pitäisi arvostaa enemmän.</p>
+            <p>Ensinnäkin vapaaehtoistyö auttaa ihmisiä, jotka tarvitsevat tukea. Esimerkiksi ikäihmiset, yksinäiset ihmiset ja vähävaraiset perheet voivat hyötyä vapaaehtoisten tarjoamasta avusta.</p>
+            <p>Lisäksi vapaaehtoistyö antaa mahdollisuuden tutustua uusiin ihmisiin ja oppia hyödyllisiä taitoja. Se voi myös parantaa omaa hyvinvointia, koska muiden auttaminen tuo usein hyvää mieltä.</p>
+            <p>Toisaalta kaikilla ei ole mahdollisuutta osallistua vapaaehtoistyöhön esimerkiksi työkiireiden tai perhevastuiden vuoksi.</p>
+            <p>Mielestäni vapaaehtoistyön ei tarvitse olla säännöllistä tai pitkäaikaista. Jokainen voi auttaa omien mahdollisuuksiensa mukaan. Pienilläkin teoilla voi olla suuri merkitys.</p>
+
+            <h3>Hyvä elämä koostuu monista asioista</h3>
+            <p>Ihmisillä on erilaisia käsityksiä siitä, mitä hyvä elämä tarkoittaa. Joillekin se merkitsee menestystä ja taloudellista hyvinvointia, kun taas toisille tärkeintä ovat perhe, terveys ja vapaa-aika. Mielestäni hyvä elämä muodostuu ennen kaikkea tasapainosta.</p>
+            <p>Ensinnäkin terveys ja läheiset ihmissuhteet ovat erittäin tärkeitä. Ihminen voi omistaa paljon rahaa, mutta ilman terveyttä ja läheisten tukea elämä voi tuntua vaikealta.</p>
+            <p>Toiseksi työ ja taloudellinen turvallisuus vaikuttavat hyvinvointiin. On tärkeää, että ihmisellä on mahdollisuus elättää itsensä ja tuntea, että hänen tekemällään työllä on merkitystä.</p>
+            <p>Lisäksi vapaa-aika ja omat harrastukset auttavat palautumaan arjen kiireistä. Jokaisen pitäisi löytää aikaa myös sellaisille asioille, joista hän nauttii.</p>
+            <p>Loppujen lopuksi hyvä elämä ei tarkoita täydellistä elämää. Mielestäni tärkeintä on olla tyytyväinen omaan tilanteeseensa, pitää huolta läheisistään ja löytää iloa pienistä asioista.</p>
+
+            <h3>Kumpi on parempi vaihtoehto: omistusasunto vai vuokra-asunto?</h3>
+            <p>Asuminen on yksi ihmisen elämän tärkeimmistä asioista, ja monien täytyy jossain vaiheessa päättää, kannattaako ostaa oma asunto vai asua vuokralla. Molemmissa vaihtoehdoissa on omat etunsa ja haittansa. Mielestäni valinta riippuu ennen kaikkea ihmisen elämäntilanteesta ja taloudellisesta tilanteesta.</p>
+            <p>Omistusasunnon suurin etu on se, että asunto voi olla pitkällä aikavälillä hyvä sijoitus. Asunnon omistaja voi myös remontoida ja sisustaa kotiaan omien mieltymystensä mukaan ilman, että hänen tarvitsee pyytää vuokranantajan lupaa. Lisäksi asuntolainan maksaminen voi tuntua järkevämmältä kuin kuukausittaisen vuokran maksaminen.</p>
+            <p>Toisaalta oman asunnon ostaminen vaatii yleensä paljon rahaa ja pitkäaikaista sitoutumista. Jos ihminen joutuu muuttamaan toiselle paikkakunnalle työn tai perheen vuoksi, asunnon myyminen voi olla hankalaa.</p>
+            <p>Vuokralla asumisen etuna puolestaan on joustavuus. Vuokralainen voi vaihtaa asuntoa helpommin elämäntilanteensa muuttuessa. Lisäksi hänen ei yleensä tarvitse huolehtia suurista remonttikustannuksista.</p>
+            <p>Yhteenvetona voidaan todeta, että kumpikaan vaihtoehto ei ole kaikille paras. Itse suosin omistusasumista silloin, kun taloudellinen tilanne on vakaa ja tulevaisuuden suunnitelmat ovat selvät.</p>
+
+            <h3>Julkisen liikenteen hintojen alentaminen hyödyttäisi kaikkia</h3>
+            <p>Julkisella liikenteellä on tärkeä merkitys ihmisten jokapäiväisessä elämässä. Bussit, junat ja muut joukkoliikennevälineet mahdollistavat liikkumisen ilman omaa autoa. Mielestäni julkisen liikenteen lippujen pitäisi olla nykyistä edullisempia, jotta mahdollisimman moni voisi käyttää niitä.</p>
+            <p>Ensinnäkin edullisempi joukkoliikenne kannustaisi ihmisiä jättämään oman auton kotiin. Tämä vähentäisi liikenteen päästöjä ja parantaisi ilmanlaatua erityisesti suurissa kaupungeissa. Samalla ruuhkat voisivat vähentyä ja kaupunkiympäristöstä tulisi viihtyisämpi.</p>
+            <p>Toiseksi lippujen hintojen alentaminen helpottaisi erityisesti opiskelijoiden, eläkeläisten ja pienituloisten ihmisten arkea. Kaikilla ei ole varaa käyttää omaa autoa tai maksaa korkeita matkakustannuksia päivittäin.</p>
+            <p>On kuitenkin syytä huomioida, että julkisen liikenteen ylläpitäminen maksaa paljon. Jos lippujen hinnat laskevat, menetetyt tulot pitäisi korvata jollakin muulla tavalla. Lisäksi palvelujen pitäisi olla riittävän kattavia myös pienemmillä paikkakunnilla.</p>
+            <p>Mielestäni julkisen liikenteen pitäisi olla edullista ja luotettavaa. Se olisi hyödyksi sekä yksittäisille ihmisille että koko yhteiskunnalle.</p>
+
+            <h3>Sosiaalisen median vaikutukset ihmisten elämään</h3>
+            <p>Sosiaalisesta mediasta on tullut olennainen osa nykyihmisten arkea. Monet käyttävät päivittäin useita tunteja erilaisten sovellusten selaamiseen. Vaikka sosiaalisella medialla on monia hyötyjä, olen sitä mieltä, että ihmiset käyttävät sitä usein liikaa.</p>
+            <p>Yksi sosiaalisen median suurimmista eduista on yhteydenpidon helppous. Sen avulla voidaan pitää yhteyttä ystäviin ja sukulaisiin, vaikka he asuisivat toisella puolella maailmaa. Lisäksi sosiaalinen media tarjoaa mahdollisuuden saada tietoa ajankohtaisista tapahtumista ja oppia uusia asioita.</p>
+            <p>Toisaalta jatkuva puhelimen tarkistaminen voi heikentää keskittymiskykyä ja vähentää kasvokkain tapahtuvaa vuorovaikutusta. Esimerkiksi perheenjäsenet saattavat viettää yhteistä aikaa samassa huoneessa, mutta jokainen keskittyy omaan puhelimeensa.</p>
+            <p>Lisäksi muiden ihmisten täydelliseltä näyttävä elämä voi aiheuttaa vertailua ja tyytymättömyyttä. On tärkeää ymmärtää, ettei sosiaalisessa mediassa julkaistu sisältö aina vastaa todellisuutta.</p>
+            <p>Mielestäni sosiaalista mediaa ei tarvitse välttää kokonaan, mutta sen käyttöön olisi hyvä suhtautua tietoisemmin. Jokaisen pitäisi löytää tasapaino digitaalisen maailman ja todellisen elämän välillä.</p>
+
+            <h3>Ympäristönsuojelu on kaikkien yhteinen asia</h3>
+            <p>Ympäristönsuojelu on noussut tärkeäksi keskustelunaiheeksi kaikkialla maailmassa. Ilmastonmuutos, luonnon monimuotoisuuden väheneminen ja luonnonvarojen liiallinen kulutus vaikuttavat sekä ihmisten että eläinten elämään. Mielestäni ympäristönsuojelu ei ole vain yksittäisten ihmisten vastuulla, vaan siihen tarvitaan kaikkien osallistumista.</p>
+            <p>Yksittäiset ihmiset voivat vaikuttaa ympäristön tilaan omilla päivittäisillä valinnoillaan. Esimerkiksi jätteiden kierrättäminen, julkisen liikenteen käyttäminen ja turhan kuluttamisen vähentäminen ovat hyviä tapoja suojella luontoa. Vaikka yksittäinen teko saattaa tuntua pieneltä, miljoonien ihmisten yhteisillä valinnoilla voi olla suuri vaikutus.</p>
+            <p>Yrityksillä ja päättäjillä on kuitenkin vielä suurempi vastuu. Yritysten pitäisi kehittää ympäristöystävällisempiä tuotteita ja vähentää tuotantonsa aiheuttamia päästöjä. Lisäksi päättäjien tulisi luoda sääntöjä, jotka kannustavat kestävään kehitykseen.</p>
+            <p>On myös tärkeää, että ympäristönsuojelu ei muodostu kohtuuttomaksi taloudelliseksi taakaksi pienituloisille ihmisille.</p>
+            <p>Yhteenvetona voidaan todeta, että luonnon suojeleminen vaatii yhteistyötä. Jokainen voi tehdä jotakin, mutta suurten muutosten aikaansaamiseksi tarvitaan myös yritysten ja yhteiskunnan aktiivista toimintaa.</p>
+
+            <h3>Etätyö vai toimistotyö?</h3>
+            <p>Työelämä on muuttunut huomattavasti viime vuosina, ja etätyöstä on tullut monille tavallinen tapa tehdä töitä. Osa ihmisistä pitää kotona työskentelyä parhaana vaihtoehtona, kun taas toiset arvostavat toimistolla työskentelyä. Mielestäni etätyö tarjoaa paljon etuja, mutta työn tekeminen toimistolla on edelleen tärkeää.</p>
+            <p>Etätyön suurimpia hyötyjä ovat joustavuus ja ajansäästö. Työntekijän ei tarvitse käyttää aikaa työmatkoihin, ja hän voi usein suunnitella päivänsä itselleen sopivalla tavalla. Tämä voi helpottaa erityisesti lapsiperheiden arkea ja parantaa työn ja vapaa-ajan yhteensovittamista.</p>
+            <p>Toisaalta etätyö voi lisätä yksinäisyyttä, koska työntekijät eivät tapaa työkavereitaan päivittäin. Lisäksi kotona voi olla vaikeampaa keskittyä, jos ympäristössä on paljon häiriötekijöitä.</p>
+            <p>Toimistotyössä puolestaan yhteistyö ja keskustelu työkavereiden kanssa voivat sujua helpommin. Myös uusien työntekijöiden perehdyttäminen voi olla tehokkaampaa kasvotusten.</p>
+            <p>Mielestäni paras ratkaisu olisi yhdistelmämalli, jossa työntekijät voivat tehdä osan viikosta etätöitä ja osan toimistolla. Näin molempien työskentelytapojen hyödyt voidaan ottaa huomioon.</p>
+
+            <h3>Päiväkodin merkitys lapsen kehitykselle</h3>
+            <p>Pienten lasten päivähoidosta keskustellaan paljon, sillä vanhemmilla on erilaisia näkemyksiä siitä, mikä on lapselle paras vaihtoehto. Jotkut ajattelevat, että lapsen olisi parempi viettää ensimmäiset vuotensa kotona, kun taas toiset pitävät päiväkotia tärkeänä osana lapsen kehitystä. Mielestäni päiväkodilla on monia hyötyjä, mutta lapsen yksilölliset tarpeet pitäisi aina ottaa huomioon.</p>
+            <p>Päiväkodin yksi suurimmista eduista on se, että lapsi oppii toimimaan muiden lasten kanssa. Hän harjoittelee jakamista, yhteistyötä ja erilaisten ihmisten kanssa kommunikointia. Lisäksi päiväkodissa järjestetään usein toimintaa, joka tukee lapsen kielellistä, sosiaalista ja liikunnallista kehitystä.</p>
+            <p>Toisaalta pienet lapset tarvitsevat paljon läheisyyttä ja turvallisuuden tunnetta. Jos lapsi on päiväkodissa hyvin pitkiä päiviä, hän saattaa väsyä. Myös suuret lapsiryhmät voivat vaikeuttaa yksilöllisen huomion saamista.</p>
+            <p>Vanhempien mahdollisuus hoitaa lasta kotona on tärkeä vaihtoehto, mutta kaikilla perheillä ei ole siihen taloudellisia mahdollisuuksia.</p>
+            <p>Yhteenvetona totean, että päiväkoti voi olla lapselle erittäin hyvä kasvuympäristö, kunhan ryhmät ovat sopivan kokoisia ja lapsen hyvinvoinnista huolehditaan.</p>
+
+            <h3>Maksuton terveydenhuolto kuuluu kaikille</h3>
+            <p>Terveydenhuolto on yksi hyvinvointiyhteiskunnan tärkeimmistä palveluista. Suomessa julkinen terveydenhuolto tarjoaa ihmisille monenlaisia palveluja, mutta osa käynneistä ja hoidoista maksaa. Mielestäni terveydenhuollon pitäisi olla mahdollisimman edullista, jotta jokainen voisi saada tarvitsemaansa hoitoa taloudellisesta tilanteestaan riippumatta.</p>
+            <p>Ensinnäkin maksuton tai edullinen terveydenhuolto edistää ihmisten välistä tasa-arvoa. Kaikilla pitäisi olla mahdollisuus päästä lääkäriin silloin, kun he sairastuvat. Jos hoito on liian kallista, pienituloiset saattavat lykätä lääkärikäyntiä, mikä voi pahentaa terveysongelmia.</p>
+            <p>Toiseksi ennaltaehkäisevä hoito voi vähentää yhteiskunnan kustannuksia pitkällä aikavälillä. Kun sairaudet havaitaan ajoissa, niiden hoitaminen voi olla helpompaa ja edullisempaa.</p>
+            <p>Toisaalta täysin maksuton terveydenhuolto vaatisi paljon julkista rahoitusta. Lisäksi terveyspalvelujen saatavuuteen vaikuttavat henkilöstön määrä ja hoitoon pääsyn odotusajat.</p>
+            <p>Mielestäni tärkeintä ei ole välttämättä se, että kaikki palvelut ovat täysin ilmaisia, vaan se, ettei kenenkään tarvitse jättää välttämätöntä hoitoa saamatta rahan puutteen vuoksi.</p>
+
+            <h3>Kaupungissa vai maaseudulla asuminen?</h3>
+            <p>Asuinpaikan valinta vaikuttaa merkittävästi ihmisen elämänlaatuun. Jotkut viihtyvät suurissa kaupungeissa, kun taas toiset arvostavat maaseudun rauhallisuutta. Molemmissa vaihtoehdoissa on hyviä ja huonoja puolia. Mielestäni sopiva asuinpaikka riippuu ihmisen elämäntilanteesta ja henkilökohtaisista mieltymyksistä.</p>
+            <p>Kaupungissa asumisen suurimpia etuja ovat monipuoliset palvelut ja paremmat työmahdollisuudet. Julkinen liikenne toimii yleensä hyvin, ja kaupungeissa on tarjolla erilaisia harrastuksia, oppilaitoksia ja kulttuuritapahtumia. Erityisesti nuorille ja opiskelijoille kaupunki voi tarjota paljon mahdollisuuksia.</p>
+            <p>Maaseudulla puolestaan elämä on usein rauhallisempaa. Luonto on lähellä, asuinympäristö voi olla väljempi ja asumiskustannukset saattavat olla pienemmät. Lisäksi yhteisöllisyys voi olla vahvempaa pienillä paikkakunnilla.</p>
+            <p>Toisaalta maaseudulla palvelut voivat olla kaukana, eikä julkinen liikenne aina mahdollista sujuvaa liikkumista. Tämä voi vaikeuttaa erityisesti ikäihmisten ja autottomien ihmisten arkea.</p>
+            <p>Itse arvostan luonnon läheisyyttä ja rauhallista ympäristöä, mutta pidän myös hyviä palveluja tärkeinä. Siksi paras vaihtoehto olisi mielestäni paikka, jossa nämä asiat ovat sopivassa tasapainossa.</p>
+
+            <h3>Kauppojen aukioloajat herättävät keskustelua</h3>
+            <p>Kauppojen aukioloajat vaikuttavat monien ihmisten arkeen. Nykyään monet kaupat ovat avoinna myös iltaisin ja viikonloppuisin. Mielestäni kauppojen pitäisi saada olla auki joka päivä, mutta työntekijöiden oikeuksista ja hyvinvoinnista täytyy huolehtia.</p>
+            <p>Pitkät aukioloajat helpottavat erityisesti niiden ihmisten elämää, jotka tekevät tavallista työaikaa. Kaikki eivät ehdi ostoksille päiväsaikaan, joten iltaisin ja viikonloppuisin avoinna olevat kaupat tarjoavat enemmän joustavuutta.</p>
+            <p>Lisäksi matkailijat ja vuorotyötä tekevät ihmiset hyötyvät siitä, että palveluja on saatavilla erilaisina aikoina. Kauppojen pidemmät aukioloajat voivat myös lisätä yritysten myyntiä.</p>
+            <p>Toisaalta työntekijöiden täytyy saada riittävästi lepoa ja aikaa perheelleen. Jos kaupat ovat jatkuvasti auki, työvuorojen suunnitteluun ja riittävään henkilöstöön on kiinnitettävä erityistä huomiota. Työntekijöille pitäisi myös maksaa asianmukaista korvausta ilta- ja viikonlopputyöstä.</p>
+            <p>Yhteenvetona voidaan todeta, että pitkät aukioloajat hyödyttävät asiakkaita, mutta niitä ei pitäisi toteuttaa työntekijöiden hyvinvoinnin kustannuksella. Tasapainoinen ratkaisu olisi paras kaikille osapuolille.</p>
+
+            <h3>Säästäminen vai kuluttaminen?</h3>
+            <p>Raha on tärkeä osa jokapäiväistä elämää, ja jokaisella on omat tapansa käyttää sitä. Jotkut haluavat säästää mahdollisimman paljon, kun taas toiset käyttävät rahaa mielellään matkustamiseen, harrastuksiin ja ostoksiin. Mielestäni säästäminen on tärkeää, mutta rahaa pitäisi myös käyttää asioihin, jotka lisäävät hyvinvointia.</p>
+            <p>Säästämisen suurin etu on taloudellinen turvallisuus. Jos ihmisellä on säästöjä, hän pystyy paremmin selviytymään yllättävistä menoista, kuten kodinkoneen rikkoutumisesta tai työttömyydestä. Lisäksi säästäminen auttaa suunnittelemaan tulevaisuutta ja saavuttamaan suurempia tavoitteita.</p>
+            <p>Toisaalta liian tiukka säästäminen voi heikentää elämänlaatua. Jos ihminen luopuu kaikista harrastuksista ja vapaa-ajan aktiviteeteista säästääkseen rahaa, hän saattaa menettää monia tärkeitä kokemuksia.</p>
+            <p>Nykyään myös mainonta ja sosiaalinen media kannustavat ihmisiä ostamaan jatkuvasti uusia tuotteita. Siksi olisi tärkeää oppia erottamaan todelliset tarpeet hetkellisistä mielihaluista.</p>
+            <p>Mielestäni paras ratkaisu on tasapaino. Jokaisen olisi hyvä säästää osa tuloistaan, mutta samalla rahaa kannattaa käyttää harkitusti asioihin, jotka tuovat iloa ja parantavat elämänlaatua.</p>
+
+            <h3>20 powerful B2 expressions to learn</h3>
+            <p>These expressions can be used in almost every one of the 10 essays.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Finnish expression</th>
+                        <th>English meaning</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Nykyään yhä useammat ihmiset…</td><td>Nowadays more and more people…</td></tr>
+                    <tr><td>Tämä aihe herättää paljon keskustelua.</td><td>This topic creates a lot of discussion.</td></tr>
+                    <tr><td>Mielestäni on tärkeää huomioida, että…</td><td>In my opinion, it is important to consider that…</td></tr>
+                    <tr><td>Yksi merkittävimmistä eduista on…</td><td>One of the most significant advantages is…</td></tr>
+                    <tr><td>Tästä on hyötyä erityisesti…</td><td>This is particularly beneficial for…</td></tr>
+                    <tr><td>Toisaalta on otettava huomioon, että…</td><td>On the other hand, it must be considered that…</td></tr>
+                    <tr><td>Tämä voi johtaa siihen, että…</td><td>This may lead to…</td></tr>
+                    <tr><td>Pitkällä aikavälillä…</td><td>In the long term…</td></tr>
+                    <tr><td>Tästä huolimatta…</td><td>Despite this…</td></tr>
+                    <tr><td>On kuitenkin syytä muistaa, että…</td><td>It is worth remembering, however, that…</td></tr>
+                    <tr><td>Tällä voi olla merkittävä vaikutus…</td><td>This can have a significant effect on…</td></tr>
+                    <tr><td>Yksittäisen ihmisen näkökulmasta…</td><td>From an individual's perspective…</td></tr>
+                    <tr><td>Koko yhteiskunnan kannalta…</td><td>From the perspective of society as a whole…</td></tr>
+                    <tr><td>Tämä ei kuitenkaan tarkoita sitä, että…</td><td>This does not mean, however, that…</td></tr>
+                    <tr><td>On löydettävä sopiva tasapaino…</td><td>A suitable balance must be found…</td></tr>
+                    <tr><td>Kaikilla ei ole samanlaisia mahdollisuuksia…</td><td>Not everyone has the same opportunities…</td></tr>
+                    <tr><td>Ratkaisu riippuu pitkälti…</td><td>The solution largely depends on…</td></tr>
+                    <tr><td>On tärkeää ottaa huomioon molemmat näkökulmat.</td><td>It is important to consider both perspectives.</td></tr>
+                    <tr><td>Yhteenvetona voidaan todeta, että…</td><td>In summary, it can be stated that…</td></tr>
+                    <tr><td>Loppujen lopuksi tärkeintä on…</td><td>Ultimately, the most important thing is…</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- SECTION 2: MUODOLLISET VIESTIT JA VIRALLINEN SANASTO -->
+        <section id="section-offical">
+            <h2>2. Muodolliset viestit ja virallinen sanasto</h2>
+
+            <h3>Viralliset viestiesimerkit</h3>
+
+            <div class="message-box">
+                <p><strong>Aihe: Valitus jatkuvasta melusta</strong></p>
+                <p>Hyvä isännöitsijä,</p>
+                <p>Otan yhteyttä, koska taloyhtiössämme on esiintynyt viime aikoina jatkuvaa meluhaittaa. Naapuriasunnostani kuuluu usein kovaa musiikkia ja muuta häiritsevää ääntä erityisesti myöhään illalla.</p>
+                <p>Tilanne on jatkunut jo useita viikkoja, ja se on vaikeuttanut nukkumistani sekä vaikuttanut jaksamiseeni työpäivien aikana. Ymmärrän, että jokaisella asukkaalla on oikeus viettää vapaa-aikaansa omalla tavallaan, mutta samalla olisi tärkeää ottaa huomioon myös muiden asukkaiden asumisrauha.</p>
+                <p>Pyytäisin, että voisitte selvittää tilanteen ja tarvittaessa muistuttaa asukkaita taloyhtiön järjestyssäännöistä.</p>
+                <p>Kiitos yhteistyöstänne. Odotan vastaustanne.</p>
+                <p>Ystävällisin terveisin,<br>Asukas</p>
+            </div>
+
+            <div class="message-box">
+                <p><strong>Aihe: Tiedustelu suomen kielen kurssista</strong></p>
+                <p>Hyvä kurssivastaava,</p>
+                <p>Olen kiinnostunut osallistumaan järjestämäänne suomen kielen kurssiin ja haluaisin saada siitä lisätietoja.</p>
+                <p>Haluaisin tiedustella, milloin seuraava kurssi alkaa ja kuinka kauan se kestää. Lisäksi olisin kiinnostunut tietämään, onko kurssi tarkoitettu B2-tason opiskelijoille ja sisältääkö opetus myös kirjallisia harjoituksia sekä suullisia tehtäviä.</p>
+                <p>Olisin kiitollinen, jos voisitte lähettää minulle tietoa kurssimaksusta, ilmoittautumisajasta ja opetuksen aikataulusta.</p>
+                <p>Toivon, että kurssille on vielä vapaita paikkoja, sillä haluaisin kehittää erityisesti suomen kielen kirjoittamis- ja keskustelutaitojani.</p>
+                <p>Kiitos etukäteen vastauksestanne.</p>
+                <p>Ystävällisin terveisin,<br>Opiskelija</p>
+            </div>
+
+            <div class="message-box">
+                <p><strong>Aihe: Hakemus avoimeen työpaikkaan</strong></p>
+                <p>Hyvä rekrytointivastaava,</p>
+                <p>Haluaisin hakea yrityksessänne avoinna olevaa asiakaspalvelijan työpaikkaa, josta sain tietoa verkkosivuiltanne.</p>
+                <p>Olen kiinnostunut tehtävästä, koska pidän ihmisten kanssa työskentelystä ja haluan kehittää ammatillista osaamistani. Minulla on aikaisempaa kokemusta asiakaspalvelusta, ja olen tottunut työskentelemään sekä itsenäisesti että osana tiimiä.</p>
+                <p>Vahvuuksiani ovat vastuullisuus, joustavuus ja hyvät vuorovaikutustaidot. Lisäksi opin nopeasti uusia asioita ja suhtaudun myönteisesti erilaisiin työtehtäviin.</p>
+                <p>Olisin mielelläni käytettävissänne työhaastattelua varten, jossa voisin kertoa tarkemmin osaamisestani.</p>
+                <p>Kiitos ajastanne ja hakemukseni huomioimisesta.</p>
+                <p>Ystävällisin terveisin,<br>Hakija</p>
+            </div>
+
+            <div class="message-box">
+                <p><strong>Aihe: Palautetta ravintolanne palvelusta</strong></p>
+                <p>Hyvä ravintolan johtaja,</p>
+                <p>Haluaisin antaa palautetta viime viikonloppuna saamastani palvelusta ravintolassanne.</p>
+                <p>Vierailin ravintolassanne ystävieni kanssa lauantai-iltana. Valitettavasti kokemuksemme ei vastannut odotuksiamme. Jouduimme odottamaan tilaustamme lähes tunnin, eikä henkilökunnalta saatu tietoa viivästyksen syystä.</p>
+                <p>Ymmärrän, että kiireisinä aikoina ravintoloissa voi esiintyä odottamattomia tilanteita. Mielestäni asiakkaille olisi kuitenkin tärkeää ilmoittaa mahdollisista viivästyksistä ajoissa.</p>
+                <p>Toivon, että otatte palautteeni huomioon ja pyritte parantamaan palvelun sujuvuutta tulevaisuudessa.</p>
+                <p>Kiitos asian käsittelystä.</p>
+                <p>Ystävällisin terveisin,<br>Asiakas</p>
+            </div>
+
+            <div class="message-box">
+                <p><strong>Aihe: Pyyntö työvuorojen muuttamisesta</strong></p>
+                <p>Hyvä esihenkilö,</p>
+                <p>Haluaisin keskustella mahdollisuudesta muuttaa nykyisiä työvuorojani.</p>
+                <p>Perhetilanteeni on muuttunut viime aikoina, minkä vuoksi aikaiset aamuvuorot ovat aiheuttaneet jonkin verran haasteita arjen järjestämisessä. Olisin kiitollinen, jos työvuorojani olisi mahdollista suunnitella hieman joustavammin.</p>
+                <p>Ymmärrän, että työvuorojen järjestäminen edellyttää koko työyhteisön tarpeiden huomioimista. Olen kuitenkin valmis keskustelemaan erilaisista vaihtoehdoista, jotka sopisivat sekä työnantajalle että minulle.</p>
+                <p>Toivon, että voisimme löytää tilanteeseen molempia osapuolia hyödyttävän ratkaisun.</p>
+                <p>Kiitos ymmärryksestänne. Jään odottamaan vastaustanne.</p>
+                <p>Ystävällisin terveisin,<br>Työntekijä</p>
+            </div>
+
+            <div class="message-box">
+                <p><strong>Aihe: Ehdotus työhyvinvoinnin parantamiseksi</strong></p>
+                <p>Hyvä henkilöstöpäällikkö,</p>
+                <p>Haluaisin esittää muutamia ehdotuksia työhyvinvoinnin parantamiseksi työpaikallamme.</p>
+                <p>Olen huomannut, että työntekijöiden työmäärä on viime kuukausina kasvanut merkittävästi. Tämä on aiheuttanut kiirettä ja lisännyt stressiä työyhteisössä.</p>
+                <p>Mielestäni olisi hyödyllistä järjestää säännöllisiä henkilöstöpalavereita, joissa työntekijät voisivat kertoa kokemuksistaan ja tuoda esiin kehittämistarpeita. Lisäksi lyhyet yhteiset virkistystapahtumat voisivat vahvistaa työyhteisön yhteishenkeä.</p>
+                <p>Uskon, että näillä toimenpiteillä voitaisiin parantaa sekä työntekijöiden viihtyvyyttä että työn tehokkuutta.</p>
+                <p>Toivon, että ehdotukseni voidaan ottaa huomioon tulevassa suunnittelussa.</p>
+                <p>Ystävällisin terveisin,<br>Työntekijä</p>
+            </div>
+
+            <div class="message-box">
+                <p><strong>Aihe: Ilmoitus julkisen liikenteen ongelmista</strong></p>
+                <p>Hyvä liikennesuunnittelusta vastaava henkilö,</p>
+                <p>Haluaisin tuoda esiin ongelman, joka liittyy alueemme julkiseen liikenteeseen.</p>
+                <p>Lähialueellamme kulkevat bussit ovat viime aikoina olleet usein myöhässä. Erityisesti aamuisin tämä aiheuttaa vaikeuksia työmatkalaisille ja opiskelijoille, joiden täytyy ehtiä ajoissa työpaikalle tai oppilaitokseen.</p>
+                <p>Lisäksi viikonloppuisin bussivuoroja on mielestäni liian vähän, minkä vuoksi autottomien asukkaiden liikkuminen on hankalaa.</p>
+                <p>Olisin kiitollinen, jos voisitte selvittää mahdollisuutta lisätä bussivuoroja ja parantaa aikataulujen luotettavuutta.</p>
+                <p>Toivon, että asiaan kiinnitetään huomiota tulevaisuudessa.</p>
+                <p>Ystävällisin terveisin,<br>Alueen asukas</p>
+            </div>
+
+            <div class="message-box">
+                <p><strong>Aihe: Ajanvarauksen peruuttaminen</strong></p>
+                <p>Hyvä vastaanoton henkilökunta,</p>
+                <p>Olen varannut ajan vastaanotollenne ensi viikon keskiviikoksi klo 10.00. Valitettavasti joudun peruuttamaan kyseisen ajan henkilökohtaisista syistä.</p>
+                <p>Pahoittelen mahdollisesti aiheutuvaa vaivaa ja ilmoitan peruutuksesta hyvissä ajoin, jotta vapautunut aika voidaan tarjota toiselle asiakkaalle.</p>
+                <p>Haluaisin myös tiedustella, olisiko mahdollista varata uusi aika seuraavalle viikolle. Minulle sopisivat erityisesti iltapäiväajat.</p>
+                <p>Olisin kiitollinen, jos voisitte ilmoittaa minulle mahdollisista vapaista ajoista sähköpostitse.</p>
+                <p>Kiitos ymmärryksestänne ja avustanne.</p>
+                <p>Ystävällisin terveisin,<br>Asiakas</p>
+            </div>
+
+            <div class="message-box">
+                <p><strong>Aihe: Ehdotus lähialueen palveluiden kehittämiseksi</strong></p>
+                <p>Hyvä kunnan edustaja,</p>
+                <p>Kirjoitan teille ehdottaakseni lähialueemme palveluiden kehittämistä.</p>
+                <p>Asuinalueellamme asuu paljon lapsiperheitä ja ikääntyneitä ihmisiä, mutta yhteisiä virkistysalueita on melko vähän. Mielestäni alueelle olisi tarpeellista rakentaa lisää leikkipaikkoja sekä turvallisia ulkoilureittejä.</p>
+                <p>Tällaiset palvelut edistäisivät asukkaiden hyvinvointia ja kannustaisivat ihmisiä viettämään enemmän aikaa ulkona. Lisäksi ne voisivat lisätä eri ikäryhmien välistä vuorovaikutusta.</p>
+                <p>Ymmärrän, että uusien palveluiden rakentaminen vaatii taloudellisia resursseja. Siitä huolimatta toivon, että ehdotustani voitaisiin harkita tulevassa kunnan suunnittelussa.</p>
+                <p>Kiitos ajastanne ja asian huomioimisesta.</p>
+                <p>Ystävällisin terveisin,<br>Kunnan asukas</p>
+            </div>
+
+            <div class="message-box">
+                <p><strong>Aihe: Tiedustelu virheellisestä laskusta</strong></p>
+                <p>Hyvä asiakaspalvelu,</p>
+                <p>Otan yhteyttä saadakseni lisätietoja viimeisimmästä sähkölaskustani.</p>
+                <p>Huomasin, että laskun loppusumma on huomattavasti suurempi kuin aikaisempina kuukausina, vaikka sähkönkulutukseni ei ole mielestäni muuttunut merkittävästi.</p>
+                <p>Haluaisin tiedustella, mistä laskussa näkyvä korotus johtuu. Olisiko mahdollista tarkistaa kulutustiedot ja varmistaa, että laskutus on suoritettu oikein?</p>
+                <p>Mikäli laskussa on tapahtunut virhe, pyytäisin teitä korjaamaan sen ja lähettämään minulle uuden laskun.</p>
+                <p>Kiitos jo etukäteen avustanne. Jään odottamaan vastaustanne.</p>
+                <p>Ystävällisin terveisin,<br>Asiakas</p>
+            </div>
+
+            <h3>Formal phrases for YKI B2 – 50 useful expressions</h3>
+
+            <h4>A. Starting a formal message</h4>
+            <table>
+                <thead><tr><th>Finnish phrase</th><th>English</th></tr></thead>
+                <tbody>
+                    <tr><td>Otan yhteyttä seuraavan asian vuoksi.</td><td>I am contacting you regarding the following matter.</td></tr>
+                    <tr><td>Kirjoitan teille koskien...</td><td>I am writing to you concerning...</td></tr>
+                    <tr><td>Haluaisin tiedustella...</td><td>I would like to enquire...</td></tr>
+                    <tr><td>Olen kiinnostunut saamaan lisätietoja...</td><td>I am interested in receiving more information.</td></tr>
+                    <tr><td>Pyydän ystävällisesti lisäselvitystä...</td><td>I kindly request further clarification.</td></tr>
+                    <tr><td>Haluan tuoda esiin erään tärkeän asian.</td><td>I want to raise an important matter.</td></tr>
+                    <tr><td>Lähestyn teitä seuraavan ongelman vuoksi.</td><td>I am contacting you because of the following problem.</td></tr>
+                    <tr><td>Sain tietoa asiasta verkkosivuiltanne.</td><td>I learned about this from your website.</td></tr>
+                </tbody>
+            </table>
+
+            <h4>B. Giving opinions</h4>
+            <table>
+                <thead><tr><th>Finnish phrase</th><th>English</th></tr></thead>
+                <tbody>
+                    <tr><td>Mielestäni olisi tärkeää, että...</td><td>In my opinion, it would be important that...</td></tr>
+                    <tr><td>Näkemykseni mukaan...</td><td>In my view...</td></tr>
+                    <tr><td>Olen vakuuttunut siitä, että...</td><td>I am convinced that...</td></tr>
+                    <tr><td>On syytä ottaa huomioon, että...</td><td>It should be taken into account that...</td></tr>
+                    <tr><td>Haluan korostaa, että...</td><td>I want to emphasise that...</td></tr>
+                    <tr><td>On mielestäni perusteltua todeta, että...</td><td>I think it is justified to state that...</td></tr>
+                    <tr><td>En pidä nykyistä tilannetta hyväksyttävänä.</td><td>I do not consider the current situation acceptable.</td></tr>
+                    <tr><td>Asiaan tulisi suhtautua vakavasti.</td><td>The matter should be taken seriously.</td></tr>
+                </tbody>
+            </table>
+
+            <h4>C. Explaining reasons</h4>
+            <table>
+                <thead><tr><th>Finnish phrase</th><th>English</th></tr></thead>
+                <tbody>
+                    <tr><td>Tämä johtuu pääasiassa siitä, että...</td><td>This is mainly because...</td></tr>
+                    <tr><td>Yksi keskeinen syy on se, että...</td><td>One key reason is that...</td></tr>
+                    <tr><td>Tämän seurauksena...</td><td>As a result of this...</td></tr>
+                    <tr><td>Tästä aiheutuu useita ongelmia.</td><td>This causes several problems.</td></tr>
+                    <tr><td>Tilanne vaikuttaa merkittävästi...</td><td>The situation significantly affects...</td></tr>
+                    <tr><td>Lisäksi on huomioitava, että...</td><td>Furthermore, it should be noted that...</td></tr>
+                    <tr><td>Tästä huolimatta...</td><td>Despite this...</td></tr>
+                    <tr><td>Siitä huolimatta, että...</td><td>Despite the fact that...</td></tr>
+                    <tr><td>Edellä mainituista syistä...</td><td>For the reasons mentioned above...</td></tr>
+                    <tr><td>On myös huomattava, että...</td><td>It should also be noted that...</td></tr>
+                </tbody>
+            </table>
+
+            <h4>D. Making requests and suggestions</h4>
+            <table>
+                <thead><tr><th>Finnish phrase</th><th>English</th></tr></thead>
+                <tbody>
+                    <tr><td>Pyytäisin teitä selvittämään asian.</td><td>I would ask you to investigate the matter.</td></tr>
+                    <tr><td>Olisiko mahdollista järjestää...?</td><td>Would it be possible to arrange...?</td></tr>
+                    <tr><td>Toivoisin, että asiaan puututtaisiin.</td><td>I hope action would be taken.</td></tr>
+                    <tr><td>Ehdottaisin seuraavaa ratkaisua.</td><td>I would suggest the following solution.</td></tr>
+                    <tr><td>Olisin kiitollinen, jos voisitte...</td><td>I would be grateful if you could...</td></tr>
+                    <tr><td>Pyytäisin teitä harkitsemaan asiaa uudelleen.</td><td>I would ask you to reconsider the matter.</td></tr>
+                    <tr><td>Olisi suotavaa, että...</td><td>It would be desirable that...</td></tr>
+                    <tr><td>Voisitteko ystävällisesti vahvistaa...?</td><td>Could you kindly confirm...?</td></tr>
+                    <tr><td>Toivon, että ehdotukseni otetaan huomioon.</td><td>I hope my suggestion will be considered.</td></tr>
+                    <tr><td>Asia olisi hyvä ratkaista mahdollisimman pian.</td><td>It would be good to resolve the matter as soon as possible.</td></tr>
+                </tbody>
+            </table>
+
+            <h4>E. Ending a formal message</h4>
+            <table>
+                <thead><tr><th>Finnish phrase</th><th>English</th></tr></thead>
+                <tbody>
+                    <tr><td>Jään odottamaan vastaustanne.</td><td>I look forward to your reply.</td></tr>
+                    <tr><td>Kiitos jo etukäteen avustanne.</td><td>Thank you in advance for your help.</td></tr>
+                    <tr><td>Kiitos asian käsittelystä.</td><td>Thank you for handling the matter.</td></tr>
+                    <tr><td>Toivon pikaista yhteydenottoanne.</td><td>I hope to hear from you soon.</td></tr>
+                    <tr><td>Arvostan yhteistyötänne.</td><td>I appreciate your cooperation.</td></tr>
+                    <tr><td>Pahoittelen mahdollisesti aiheutuvaa vaivaa.</td><td>I apologise for any inconvenience.</td></tr>
+                    <tr><td>Toivon, että asiaan löytyy ratkaisu.</td><td>I hope a solution can be found.</td></tr>
+                    <tr><td>Ystävällisin terveisin</td><td>Kind regards</td></tr>
+                </tbody>
+            </table>
+
+            <h3>Advanced B2 sentence transformations</h3>
+            <table>
+                <thead><tr><th>Simple sentence</th><th>Advanced B2 sentence</th></tr></thead>
+                <tbody>
+                    <tr><td>Tämä on tärkeää.</td><td>Kyseisellä asialla on merkittävä vaikutus arkeen.</td></tr>
+                    <tr><td>Minulla on ongelma.</td><td>Olen kohdannut tilanteen, joka vaatii mielestäni huomiota.</td></tr>
+                    <tr><td>Bussit ovat myöhässä.</td><td>Julkisen liikenteen aikatauluissa on esiintynyt toistuvia ongelmia.</td></tr>
+                    <tr><td>Haluan paremman palvelun.</td><td>Toivoisin, että palvelun laatua voitaisiin parantaa.</td></tr>
+                    <tr><td>Ihmiset ovat väsyneitä.</td><td>Tilanne on vaikuttanut kielteisesti ihmisten jaksamiseen.</td></tr>
+                    <tr><td>Se ei ole hyvä asia.</td><td>En pidä nykyistä toimintatapaa tarkoituksenmukaisena.</td></tr>
+                    <tr><td>Meidän pitää tehdä jotain.</td><td>Tilanteen parantamiseksi olisi tarpeellista ryhtyä toimenpiteisiin.</td></tr>
+                    <tr><td>Tämä auttaa ihmisiä.</td><td>Tämä edistäisi ihmisten hyvinvointia merkittävästi.</td></tr>
+                    <tr><td>Minulla ei ole aikaa.</td><td>Aikatauluni on tällä hetkellä melko kiireinen.</td></tr>
+                    <tr><td>Haluan vastauksen.</td><td>Pyytäisin teitä vastaamaan tiedusteluuni mahdollisimman pian.</td></tr>
+                    <tr><td>Se aiheuttaa stressiä.</td><td>Tämä lisää huomattavasti työntekijöiden kuormitusta.</td></tr>
+                    <tr><td>Me voimme ratkaista tämän.</td><td>Uskon, että tilanteeseen on mahdollista löytää toimiva ratkaisu.</td></tr>
+                    <tr><td>Kaikki voivat osallistua.</td><td>Kaikilla tulisi olla yhdenvertaiset mahdollisuudet osallistua.</td></tr>
+                    <tr><td>Tämä on hyvä idea.</td><td>Pidän ehdotusta erittäin kannatettavana.</td></tr>
+                    <tr><td>Meidän pitää muuttaa asiaa.</td><td>Nykyistä toimintatapaa olisi syytä kehittää.</td></tr>
+                </tbody>
+            </table>
+
+            <h3>Finnish proverbs (Sananlaskut) and expressions for B2</h3>
+            <div class="proverb-box">
+                <p><strong>1. Aamulla on iltaa viisaampi.</strong><br><em>English:</em> Things become clearer with time.<br><em>Use:</em> When discussing decisions and patience.</p>
+            </div>
+            <div class="proverb-box">
+                <p><strong>2. Yhteistyö tekee voimakkaaksi.</strong><br><em>English:</em> Cooperation makes us stronger.<br><em>Use:</em> Teamwork and workplace topics.</p>
+            </div>
+            <div class="proverb-box">
+                <p><strong>3. Pisaroista syntyy puro.</strong><br><em>English:</em> Small things add up.<br><em>Use:</em> Environmental protection and saving money.</p>
+            </div>
+            <div class="proverb-box">
+                <p><strong>4. Hiljaa hyvä tulee.</strong><br><em>English:</em> Good things take time.<br><em>Use:</em> Learning, education and personal development.</p>
+            </div>
+            <div class="proverb-box">
+                <p><strong>5. Ei oppi ojaan kaada.</strong><br><em>English:</em> Learning is never a bad thing.<br><em>Use:</em> Education and lifelong learning.</p>
+            </div>
+            <div class="proverb-box">
+                <p><strong>6. Yksi kaikkien ja kaikki yhden puolesta.</strong><br><em>English:</em> One for all and all for one.<br><em>Use:</em> Community and cooperation.</p>
+            </div>
+            <div class="proverb-box">
+                <p><strong>7. Asioilla on tapana järjestyä.</strong><br><em>English:</em> Things have a way of working out.<br><em>Use:</em> Difficult situations and optimism.</p>
+            </div>
+            <div class="proverb-box">
+                <p><strong>8. Niin metsä vastaa kuin sinne huudetaan.</strong><br><em>English:</em> You get back what you give.<br><em>Use:</em> Respect, communication and relationships.</p>
+            </div>
+
+            <h3>Advanced linking words (Sidos- ja yhdistämissanat)</h3>
+            <table>
+                <thead><tr><th>Finnish</th><th>English</th><th>Example</th></tr></thead>
+                <tbody>
+                    <tr><td>Lisäksi</td><td>Furthermore</td><td>Lisäksi palvelua pitäisi kehittää.</td></tr>
+                    <tr><td>Kuitenkin</td><td>However</td><td>Tilanne on kuitenkin haastava.</td></tr>
+                    <tr><td>Toisaalta</td><td>On the other hand</td><td>Toisaalta ratkaisu voi olla kallis.</td></tr>
+                    <tr><td>Sen sijaqn (Sen sijaan)</td><td>Instead</td><td>Sen sijaan voisimme etsiä vaihtoehdon.</td></tr>
+                    <tr><td>Tästä huolimatta</td><td>Despite this</td><td>Tästä huolimatta haluan yrittää.</td></tr>
+                    <tr><td>Tämän vuoksi</td><td>For this reason</td><td>Tämän vuoksi ehdotan muutosta.</td></tr>
+                    <tr><td>Näin ollen</td><td>Consequently</td><td>Näin ollen asia vaatii huomiota.</td></tr>
+                    <tr><td>Esimerkiksi</td><td>For example</td><td>Esimerkiksi työmatkat ovat vaikeutuneet.</td></tr>
+                    <tr><td>Erityisesti</td><td>Especially</td><td>Erityisesti lapsiperheet hyötyisivät tästä.</td></tr>
+                    <tr><td>Samalla</td><td>At the same time</td><td>Samalla parannettaisiin turvallisuutta.</td></tr>
+                    <tr><td>Vaikka</td><td>Although</td><td>Vaikka tilanne on vaikea...</td></tr>
+                    <tr><td>Mikäli</td><td>If / provided that</td><td>Mikäli mahdollista, pyytäisin vastausta.</td></tr>
+                    <tr><td>Siitä syystä</td><td>For that reason</td><td>Siitä syystä otan yhteyttä.</td></tr>
+                    <tr><td>Lopuksi</td><td>Finally</td><td>Lopuksi haluan kiittää yhteistyöstä.</td></tr>
+                    <tr><td>Kaiken kaikkiaan</td><td>All in all</td><td>Kaiken kaikkiaan ehdotus on kannatettava.</td></tr>
+                </tbody>
+            </table>
+
+            <h3>Powerful B2 expressions by topic</h3>
+            <table>
+                <thead><tr><th>Topic</th><th>Useful Finnish sentence</th></tr></thead>
+                <tbody>
+                    <tr><td>Työ (Work)</td><td>Työhyvinvointiin tulisi kiinnittää nykyistä enemmän huomiota.</td></tr>
+                    <tr><td>Koulutus (Education)</td><td>Koulutuksella on keskeinen merkitys yksilön tulevaisuudelle.</td></tr>
+                    <tr><td>Terveys (Health)</td><td>Ennaltaehkäisevään terveydenhuoltoon olisi tärkeää panostaa.</td></tr>
+                    <tr><td>Ympäristö (Environment)</td><td>Jokaisen tulisi kantaa vastuuta ympäristön suojelemisesta.</td></tr>
+                    <tr><td>Perhe (Family)</td><td>Perheen ja työelämän yhteensovittaminen voi olla haastavaa.</td></tr>
+                    <tr><td>Teknologia (Technology)</td><td>Teknologian kehitys tarjoaa sekä mahdollisuuksia että haasteita.</td></tr>
+                    <tr><td>Liikenne (Transport)</td><td>Julkisen liikenteen toimivuutta olisi syytä parantaa.</td></tr>
+                    <tr><td>Ikääntyminen (Ageing)</td><td>Ikääntyneiden hyvinvointiin tulee kiinnittää erityistä huomiota.</td></tr>
+                    <tr><td>Maahanmuutto (Immigration)</td><td>Kotoutumisen tukeminen edistää yhteiskuntaan osallistumista.</td></tr>
+                    <tr><td>Nuoret (Young people)</td><td>Nuorille tulisi tarjota enemmän mahdollisuuksia työllistyä.</td></tr>
+                    <tr><td>Raha (Money)</td><td>Elinkustannusten nousu vaikuttaa monien kotitalouksien talouteen.</td></tr>
+                    <tr><td>Yhteiskunta (Society)</td><td>Yhdenvertaisuuden edistäminen kuuluu koko yhteiskunnan vastuulle.</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- SECTION 3: EPÄMUODOLLISET VIESTIT JA ARKISANASTO -->
+        <section id="section-unoffical">
+            <h2>3. Epämuodolliset viestit ja arkisanasto</h2>
+
+            <h3>Epämuodolliset viestit (10 eri aihetta)</h3>
+
+            <div class="message-box">
+                <p><strong>1. Inviting a friend to a birthday party</strong><br><em>Tehtävä: Ystävälläsi on syntymäpäivä tulossa. Kirjoita hänelle viesti ja kutsu hänet juhlimaan omaa syntymäpäivääsi.</em></p>
+                <p>Hei Anna!</p>
+                <p>Mitä sinulle kuuluu? Minulla olisi sinulle mukavia uutisia. Aion järjestää syntymäpäiväjuhlat ensi lauantaina kotonani, ja olisi todella mukavaa, jos pääsisit mukaan.</p>
+                <p>Juhlat alkavat noin kello kuusi illalla. Tarjolla on ruokaa, kakkua ja hyvää musiikkia. Ajattelin myös järjestää muutamia hauskoja pelejä, jotta kaikilla olisi mukavaa.</p>
+                <p>Ilmoitathan minulle, pääsetkö tulemaan. Voit myös ottaa puolisosi mukaan!</p>
+                <p>Nähdään pian!</p>
+                <p>Terveisin, Maria</p>
+            </div>
+
+            <div class="message-box">
+                <p><strong>2. Cancelling a meeting</strong><br><em>Tehtävä: Peruuta tapaaminen ystäväsi kanssa.</em></p>
+                <p>Hei Mika!</p>
+                <p>Olen todella pahoillani, mutta en valitettavasti pääse tapaamiseemme tänään. Minulle tuli yllättäen työasioita, jotka minun täytyy hoitaa ennen huomista.</p>
+                <p>Olin odottanut tapaamistamme, joten harmittaa, että joudun perumaan sen näin viime hetkellä. Toivottavasti tämä ei aiheuta sinulle liikaa vaivaa.</p>
+                <p>Sopisiko sinulle, että tapaisimme ensi viikon keskiviikkona samaan aikaan? Voisimme mennä vaikka kahville ja vaihtaa kuulumisia.</p>
+                <p>Kiitos ymmärryksestäsi!</p>
+                <p>Terveisin, Laura</p>
+            </div>
+
+            <div class="message-box">
+                <p><strong>3. Asking a friend for help with moving</strong><br><em>Tehtävä: Olet muuttamassa uuteen asuntoon. Kirjoita ystävällesi ja pyydä häntä auttamaan muutossa.</em></p>
+                <p>Hei Jussi!</p>
+                <p>Mitä kuuluu? Minulla olisi pieni pyyntö. Olen muuttamassa uuteen asuntoon ensi kuun alussa, ja tarvitsisin hieman apua tavaroiden kantamisessa.</p>
+                <p>Muuttopäivä on lauantai 5. joulukuuta. Minulla on melko paljon huonekaluja, joten muutama ylimääräinen käsipari olisi todella tarpeen.</p>
+                <p>Jos sinulla on aikaa auttaa, olisin siitä todella kiitollinen. Tarjoan tietenkin lounaan ja kahvit kiitokseksi avustasi.</p>
+                <p>Ilmoitathan, jos pääset mukaan!</p>
+                <p>Terveisin, Antti</p>
+            </div>
+
+            <div class="message-box">
+                <p><strong>4. Telling a friend about your holiday</strong><br><em>Tehtävä: Olet palannut lomalta. Kirjoita ystävällesi ja kerro, missä olit, mitä teit ja millainen loma oli.</em></p>
+                <p>Hei Sofia!</p>
+                <p>Olen nyt palannut lomalta, ja ajattelin kertoa sinulle matkastani.</p>
+                <p>Vietin viikon Espanjassa perheeni kanssa. Sää oli todella lämmin, ja suurimman osan ajasta vietimme rannalla. Kävimme myös tutustumassa paikallisiin nähtävyyksiin ja maistoimme erilaisia espanjalaisia ruokia.</p>
+                <p>Matka oli todella onnistunut, vaikka paluumatkalla lentomme myöhästyi muutamalla tunnilla. Oli ihanaa päästä hetkeksi pois arjen kiireistä ja viettää aikaa läheisten kanssa.</p>
+                <p>Miten sinun kesäsi on sujunut? Olisi kiva nähdä pian ja kertoa lisää!</p>
+                <p>Terveisin, Elina</p>
+            </div>
+
+            <div class="message-box">
+                <p><strong>5. Congratulating a friend on a new job</strong><br><em>Tehtävä: Ystäväsi on saanut uuden työpaikan. Kirjoita hänelle onnitteluviesti ja kysy uudesta työstä.</em></p>
+                <p>Hei Markus!</p>
+                <p>Kuulin, että olet saanut uuden työpaikan. Onneksi olkoon! Olen todella iloinen puolestasi, sillä tiedän, kuinka paljon olet tehnyt töitä tämän mahdollisuuden eteen.</p>
+                <p>Milloin aloitat uudessa työssä? Toivottavasti työtehtävät ovat mielenkiintoisia ja työilmapiiri mukava. Uskon, että tulet varmasti viihtymään siellä.</p>
+                <p>Olisi mukava kuulla lisää uudesta työpaikastasi. Mitä jos menisimme viikonloppuna kahville ja juhlistaisimme tätä hienoa uutista?</p>
+                <p>Vielä kerran paljon onnea!</p>
+                <p>Terveisin, Petri</p>
+            </div>
+
+            <div class="message-box">
+                <p><strong>6. Inviting a friend to go on a trip</strong><br><em>Tehtävä: Haluat lähteä viikonloppumatkalle ystäväsi kanssa. Kirjoita hänelle ehdotus matkasta.</em></p>
+                <p>Hei Emilia!</p>
+                <p>Minulla olisi hauska ehdotus viikonlopuksi! Mitä jos lähtisimme yhdessä Tampereelle ensi kuussa?</p>
+                <p>Voisimme matkustaa junalla perjantai-iltana ja viettää siellä koko viikonlopun. Kaupungissa on paljon nähtävää, esimerkiksi museoita, ravintoloita ja kauniita kävelyreittejä.</p>
+                <p>Ajattelin, että voisimme varata edullisen hotellin keskustasta. Näin meidän ei tarvitsisi käyttää paljon aikaa matkustamiseen kaupungin sisällä.</p>
+                <p>Olisi todella mukavaa viettää aikaa yhdessä, koska emme ole nähneet pitkään aikaan. Mitä mieltä olet ehdotuksesta?</p>
+                <p>Terveisin, Katja</p>
+            </div>
+
+            <div class="message-box">
+                <p><strong>7. Complaining to a friend about a difficult situation</strong><br><em>Tehtävä: Sinulla on ollut vaikea viikko töissä. Kirjoita ystävällesi ja kerro tilanteesta.</em></p>
+                <p>Hei Nina!</p>
+                <p>Miten sinulla menee? Minulla on ollut melko raskas viikko töissä, joten ajattelin kirjoittaa sinulle.</p>
+                <p>Työpaikallani on tällä hetkellä paljon kiireitä, ja joudun tekemään tavallista enemmän töitä. Lisäksi muutama työkaveri on lomalla, minkä vuoksi työmäärä on kasvanut entisestään.</p>
+                <p>Olen yrittänyt levätä vapaa-ajalla, mutta välillä tuntuu, ettei aikaa jää juuri mihinkään muuhun. Tarvitsisin todella pienen tauon arjesta.</p>
+                <p>Mitä jos tapaisimme viikonloppuna? Voisimme käydä kävelyllä ja jutella kaikesta rauhassa.</p>
+                <p>Olisi mukava nähdä sinua!</p>
+                <p>Terveisin, Sari</p>
+            </div>
+
+            <div class="message-box">
+                <p><strong>8. Thanking a friend for a dinner invitation</strong><br><em>Tehtävä: Ystäväsi kutsui sinut illalliselle. Kirjoita hänelle viesti ja kiitä mukavasta illasta.</em></p>
+                <p>Hei Laura!</p>
+                <p>Halusin vielä kiittää sinua eilisestä illasta. Oli todella mukavaa viettää aikaa yhdessä ja nähdä pitkästä aikaa myös muita ystäviämme.</p>
+                <p>Ruoka oli erinomaista, ja erityisesti jälkiruoka oli aivan ihana! Oli myös mukava päästä keskustelemaan rauhassa, sillä viime aikoina meillä kaikilla on ollut paljon kiireitä.</p>
+                <p>Toivottavasti voimme järjestää samanlaisen illan uudelleen lähiaikoina. Seuraavalla kerralla voitte tulla meille, niin minä voin valmistaa illallisen.</p>
+                <p>Kiitos vielä kerran vieraanvaraisuudestasi!</p>
+                <p>Terveisin, Anna</p>
+            </div>
+
+            <div class="message-box">
+                <p><strong>9. Giving advice to a friend</strong><br><em>Tehtävä: Ystäväsi on stressaantunut eikä ehdi harrastaa mitään. Kirjoita hänelle viesti ja anna neuvoja.</em></p>
+                <p>Hei Tomi!</p>
+                <p>Kuulin, että sinulla on ollut viime aikoina paljon kiireitä. Olen pahoillani, että olet joutunut stressaantumaan niin paljon.</p>
+                <p>Mielestäni sinun pitäisi yrittää löytää hieman aikaa myös itsellesi. Vaikka työ ja muut velvollisuudet ovat tärkeitä, on hyvä muistaa, että oma hyvinvointi on vähintään yhtä tärkeää.</p>
+                <p>Voisit esimerkiksi käydä lyhyillä kävelyillä työpäivän jälkeen tai kokeilla jotakin rentouttavaa harrastusta. Jos mahdollista, kannattaa myös vähentää ylimääräisiä tehtäviä ja pitää välillä taukoja.</p>
+                <p>Toivottavasti tilanteesi helpottuu pian. Voimme myös lähteä yhdessä lenkille viikonloppuna!</p>
+                <p>Terveisin, Mikko</p>
+            </div>
+
+            <div class="message-box">
+                <p><strong>10. Asking a friend to look after your pet</strong><br><em>Tehtävä: Olet lähdössä matkalle ja tarvitset jonkun huolehtimaan kissastasi. Kirjoita ystävällesi ja kysy, voisiko hän auttaa.</em></p>
+                <p>Hei Kaisa!</p>
+                <p>Mitä sinulle kuuluu? Minulla olisi sinulle pieni palveluspyyntö.</p>
+                <p>Olen lähdössä ensi viikolla muutamaksi päiväksi matkalle, mutta minulla on pieni ongelma. En ole vielä löytänyt ketään, joka voisi huolehtia kissastasi sillä aikaa.</p>
+                <p>Haluaisin kysyä, olisiko sinulla mahdollisesti aikaa käydä kotonani ruokkimassa kissaa ja vaihtamassa sen veden. Kissa on hyvin rauhallinen eikä tarvitse erityistä hoitoa.</p>
+                <p>Olisin todella kiitollinen avustasi. Voin tietenkin tuoda sinulle tuliaisia matkalta!</p>
+                <p>Ilmoitathan, jos tämä onnistuu.</p>
+                <p>Terveisin, Johanna</p>
+            </div>
+
+            <h3>Useful vocabulary and expressions for B2</h3>
+
+            <h4>A. Everyday words</h4>
+            <table>
+                <thead><tr><th>Informal Finnish</th><th>Formal Finnish</th><th>English</th></tr></thead>
+                <tbody>
+                    <tr><td>Mä</td><td>Minä</td><td>I</td></tr>
+                    <tr><td>Sä</td><td>Sinä</td><td>You</td></tr>
+                    <tr><td>Mun</td><td>Minun</td><td>My</td></tr>
+                    <tr><td>Sun</td><td>Sinun</td><td>Your</td></tr>
+                    <tr><td>Mulle</td><td>Minulle</td><td>To me</td></tr>
+                    <tr><td>Sulle</td><td>Sinulle</td><td>To you</td></tr>
+                    <tr><td>Meille</td><td>Meille</td><td>To us</td></tr>
+                    <tr><td>Niille</td><td>Heille / Niille</td><td>To them</td></tr>
+                    <tr><td>Tää</td><td>Tämä</td><td>This</td></tr>
+                    <tr><td>Toi</td><td>Tuo</td><td>That</td></tr>
+                    <tr><td>Nää</td><td>Nämä</td><td>These</td></tr>
+                    <tr><td>Noi</td><td>Nuo</td><td>Those</td></tr>
+                    <tr><td>Joku tyyppi</td><td>Henkilö</td><td>Person</td></tr>
+                    <tr><td>Juttu</td><td>Asia</td><td>Matter</td></tr>
+                    <tr><td>Duuni</td><td>Työ</td><td>Work</td></tr>
+                    <tr><td>Kämppä</td><td>Asunto</td><td>Apartment</td></tr>
+                    <tr><td>Faija</td><td>Isä</td><td>Father</td></tr>
+                    <tr><td>Mutsi</td><td>Äiti</td><td>Mother</td></tr>
+                    <tr><td>Kiva</td><td>Miellyttävä</td><td>Pleasant</td></tr>
+                    <tr><td>Tosi</td><td>Erittäin</td><td>Very</td></tr>
+                </tbody>
+            </table>
+
+            <h4>B. Informal verbs vs formal verbs</h4>
+            <table>
+                <thead><tr><th>Informal</th><th>Formal</th><th>English</th></tr></thead>
+                <tbody>
+                    <tr><td>Mä haluun</td><td>Haluan</td><td>I want</td></tr>
+                    <tr><td>Mä tarviin</td><td>Tarvitsen</td><td>I need</td></tr>
+                    <tr><td>Mä mietin</td><td>Pohdin</td><td>I consider</td></tr>
+                    <tr><td>Mä kysyn</td><td>Tiedustelen</td><td>I enquire</td></tr>
+                    <tr><td>Mä sanon</td><td>Totean</td><td>I state</td></tr>
+                    <tr><td>Mä kerron</td><td>Ilmoitan</td><td>I inform</td></tr>
+                    <tr><td>Mä pyydän</td><td>Pyydän</td><td>I request</td></tr>
+                    <tr><td>Mä yritän</td><td>Pyrin</td><td>I strive</td></tr>
+                    <tr><td>Mä autan</td><td>Avustan</td><td>I assist</td></tr>
+                    <tr><td>Mä selvitän</td><td>Selvitän</td><td>I investigate</td></tr>
+                    <tr><td>Mä huomaan</td><td>Havaitsen</td><td>I notice</td></tr>
+                    <tr><td>Mä luulen</td><td>Oletan</td><td>I assume</td></tr>
+                    <tr><td>Mä uskon</td><td>Uskon</td><td>I believe</td></tr>
+                    <tr><td>Mä tykkään</td><td>Pidän</td><td>I like</td></tr>
+                    <tr><td>Mä en tykkään / En pidä</td><td>En pidä</td><td>I dislike</td></tr>
+                    <tr><td>Mä pääsen</td><td>Pystyn osallistumaan</td><td>I can attend</td></tr>
+                    <tr><td>Mä perun</td><td>Peruutan</td><td>I cancel</td></tr>
+                    <tr><td>Mä vaihdan</td><td>Muutan</td><td>I change</td></tr>
+                    <tr><td>Mä valitan</td><td>Teen valituksen</td><td>I complain</td></tr>
+                    <tr><td>Mä ehdotan</td><td>Esitän ehdotuksen</td><td>I suggest</td></tr>
+                </tbody>
+            </table>
+
+            <h4>C. Informal expressions vs formal expressions</h4>
+            <table>
+                <thead><tr><th>Informal</th><th>Formal</th><th>English</th></tr></thead>
+                <tbody>
+                    <tr><td>Sori</td><td>Pahoittelen</td><td>Sorry</td></tr>
+                    <tr><td>Kiitti</td><td>Kiitos</td><td>Thanks</td></tr>
+                    <tr><td>Ei käy</td><td>Se ei valitettavasti sovi</td><td>It doesn't work</td></tr>
+                    <tr><td>Ei onnistu</td><td>Se ei valitettavasti ole mahdollista</td><td>It's not possible</td></tr>
+                    <tr><td>Mitä tapahtui?</td><td>Mitä on tapahtunut?</td><td>What happened?</td></tr>
+                    <tr><td>Mistä on kyse?</td><td>Haluaisin lisätietoja asiasta</td><td>What's the matter?</td></tr>
+                    <tr><td>Ei mitään hätää</td><td>Asiasta ei ole syytä huoleen</td><td>No worries</td></tr>
+                    <tr><td>Se on ihan ok</td><td>Se on täysin hyväksyttävää</td><td>That's fine</td></tr>
+                    <tr><td>Mä oon samaa mieltä</td><td>Olen samaa mieltä</td><td>I agree</td></tr>
+                    <tr><td>En oo samaa mieltä</td><td>Olen asiasta eri mieltä</td><td>I disagree</td></tr>
+                    <tr><td>Se on tosi tärkeää</td><td>Se on erittäin tärkeää</td><td>It's very important</td></tr>
+                    <tr><td>Tää on vaikeeta</td><td>Tämä on haastavaa</td><td>This is difficult</td></tr>
+                    <tr><td>Mitä mieltä oot?</td><td>Mikä on näkemyksenne asiasta?</td><td>What do you think?</td></tr>
+                    <tr><td>Vastaa pian</td><td>Pyytäisin vastaustanne mahdollisimman pian</td><td>Reply soon</td></tr>
+                    <tr><td>Soita mulle</td><td>Pyytäisin teitä ottamaan yhteyttä puhelimitse</td><td>Call me</td></tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+</body>
+</html>
